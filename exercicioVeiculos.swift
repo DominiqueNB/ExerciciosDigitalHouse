@@ -50,5 +50,5 @@ class Aviao: Veiculo{
 let siena = Carro(cor: "branco", preco: 1000, qtdPassageiros: 5, qtdCombustivel: 45, tamanhoRodas: 20.4)
 print("A quantidade de combustivel do carro é: \(siena.obterQtdCombustivel(distancia: 20))")
 
-let air = Aviao(cor: "preto", preco: 1000, qtdPassageiros: 100, qtdCombustivel: 200, piloto: "Toninho rodriguez", companhiaAerea: "Azul")
+let air = Aviao(cor: "preto", preco: 1000, qtdPassageiros: 100, qtdCombustivel: 200, piloto: "Nathalle Figueira", companhiaAerea: "Azul")
 print("A quantidade de combustivel do veículo é: \(air.obterQtdCombustivel(distancia: 1000))")
