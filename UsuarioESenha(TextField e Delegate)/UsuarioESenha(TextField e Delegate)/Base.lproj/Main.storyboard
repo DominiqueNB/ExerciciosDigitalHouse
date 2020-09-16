@@ -16,25 +16,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWc-Hr-PB9">
-                                <rect key="frame" x="57" y="294" width="300" height="34"/>
+                                <rect key="frame" x="57" y="295" width="300" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QGq-kh-2ny">
-                                <rect key="frame" x="57" y="357" width="300" height="34"/>
+                                <rect key="frame" x="57" y="359" width="300" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYS-P0-j72">
+                                <rect key="frame" x="173" y="433" width="68" height="30"/>
+                                <state key="normal" title="Cadastrar"/>
+                                <connections>
+                                    <action selector="buttonCadastrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Jw-Ja-NMs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU0-W4-Glj">
+                                <rect key="frame" x="186" y="493" width="42" height="30"/>
+                                <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <action selector="buttonEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hs3-V7-4xz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QGq-kh-2ny" secondAttribute="trailing" constant="57" id="BGm-dd-83A"/>
                             <constraint firstItem="lWc-Hr-PB9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="C2d-KI-Zc3"/>
+                            <constraint firstItem="HU0-W4-Glj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Em2-mw-mau"/>
                             <constraint firstItem="QGq-kh-2ny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="Ik6-5c-vzD"/>
+                            <constraint firstItem="HU0-W4-Glj" firstAttribute="top" secondItem="tYS-P0-j72" secondAttribute="bottom" constant="30" id="Jl6-XO-Na9"/>
                             <constraint firstItem="lWc-Hr-PB9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2P-VQ-UVz"/>
-                            <constraint firstItem="lWc-Hr-PB9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="Tsg-rx-SVb"/>
+                            <constraint firstItem="tYS-P0-j72" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9d-Ac-Zue"/>
+                            <constraint firstItem="tYS-P0-j72" firstAttribute="top" secondItem="QGq-kh-2ny" secondAttribute="bottom" constant="40" id="VQb-f7-oYs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lWc-Hr-PB9" secondAttribute="trailing" constant="57" id="ltC-qV-Aog"/>
-                            <constraint firstItem="QGq-kh-2ny" firstAttribute="top" secondItem="lWc-Hr-PB9" secondAttribute="bottom" constant="29" id="sIO-KA-O92"/>
+                            <constraint firstItem="tYS-P0-j72" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pic-QN-UIP"/>
+                            <constraint firstItem="QGq-kh-2ny" firstAttribute="top" secondItem="lWc-Hr-PB9" secondAttribute="bottom" constant="30" id="sIO-KA-O92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

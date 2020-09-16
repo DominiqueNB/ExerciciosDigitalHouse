@@ -18,18 +18,63 @@ class Usuario {
     }
 }
 
+class UsuarioRepositorio {
+    private var usuarios = [Usuario]()
+    
+    func incluirUsuario(email: String, senha: String) {
+            let usuario = Usuario(email: email, senha: senha)
+                usuarios.append(usuario)
+                print("Cadastrado com sucesso!")
+    }
+    
+    func isUsuarioCadastrado(email: String) -> Bool {
+        for item in usuarios {
+            if item.email == email{
+                return true
+            }
+        }
+        return false
+        
+    }
+}
+
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldSenha: UITextField!
-    private var usuarios = [Usuario]()
-    
+    var usuarioRepositorio = UsuarioRepositorio()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         textFieldEmail.delegate = self
         textFieldSenha.delegate = self
     }
+    
+    func limparCampos() {
+        textFieldEmail.text = ""; textFieldSenha.text = "";
+    }
+    
+    @IBAction func buttonCadastrar(_ sender: UIButton) {
+        let isEmailCadastrado = usuarioRepositorio.isUsuarioCadastrado(email: textFieldEmail.text!)
+        if !isEmailCadastrado {
+            usuarioRepositorio.incluirUsuario(email: textFieldEmail.text!, senha: textFieldSenha.text!)
+            self.view.backgroundColor = UIColor.green
+            limparCampos()
+        }
+        else {
+            self.view.backgroundColor = UIColor.red
+            limparCampos()
+            
+            
+        }
+    }
+    @IBAction func buttonEntrar(_ sender: UIButton) {
+    }
+    
     
     func validaInformacoes() -> Bool{
         if textFieldEmail.text == nil || textFieldEmail.text!.isEmpty {
@@ -44,24 +89,7 @@ class ViewController: UIViewController {
         }
         return true
     }
-    
-    func incluirUsuario(email: String, senha: String) {
-        if let email = textFieldEmail.text, !email.isEmpty {
-            if let senha = textFieldEmail.text, !senha.isEmpty {
-                let usuario = Usuario(email: email, senha: senha)
-                usuarios.append(usuario)
-            }
-        }
-    }
-    
-    func isUsuarioCadastrado(usuario: Usuario) -> Bool {
-        for item in usuarios {
-            if item.email == usuario.email {
-                return true
-            }
-        }
-        return false
-    }
+
     
     func alerta(campo: String){
         let alert = UIAlertController(title: "Atenção", message: "Falta \(campo)", preferredStyle: .alert)
@@ -73,15 +101,6 @@ class ViewController: UIViewController {
            
         }
     }
-    
-//    func carregarBotao() {
-//        if isUsuarioCadastrado(usuario: usuario.email) {
-//
-//        }
-//    }
-    
-//    verificar se tem usuarios no arrayUsuarios, criar função para verificar, metodo para realçar a cor do textfield
-    
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -96,3 +115,5 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 }
+
+
