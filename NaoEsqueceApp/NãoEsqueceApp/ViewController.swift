@@ -57,14 +57,7 @@ class ViewController: UIViewController {
         atualizarButtonsELabels()
         
     }
-    
-//    func editarProduto() {
-//        if let nome = textFieldNome.text, let quantidade = textFieldQuantidade.text {
-//            if item.isCadastrado(nome: textFieldNome.text!) {
-//                for
-//            }
-//    }
-    
+        
     func alerta(campo: String){
         let alert = UIAlertController(title: "Atenção", message: "Falta \(campo)", preferredStyle: .alert)
 
