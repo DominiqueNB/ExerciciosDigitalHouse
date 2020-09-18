@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NaoEsqueceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="M3W-Ky-ZSV">
+                                <rect key="frame" x="58" y="184" width="298" height="289"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o nome do produto aqui" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNE-YY-Tax">
+                                        <rect key="frame" x="30" y="0.0" width="238" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a quantidade aqui" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pV-Hc-FHy">
+                                        <rect key="frame" x="40" y="73" width="218" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                           " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-Cu-uIG">
+                                        <rect key="frame" x="54" y="146" width="190" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="vuE-ma-9QO">
+                                        <rect key="frame" x="42.5" y="205.5" width="213" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-Tr-lbv">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="Salvar"/>
+                                                <connections>
+                                                    <action selector="buttonSalvar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIV-h3-pKS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-KD-v1u">
+                                                <rect key="frame" x="90" y="0.0" width="33" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="Limpar"/>
+                                                <connections>
+                                                    <action selector="buttonLimpar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4y-uX-gst"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUw-Ez-A3N">
+                                                <rect key="frame" x="183" y="0.0" width="30" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="      "/>
+                                                <connections>
+                                                    <action selector="buttonExcluir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVR-5u-29h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                                             " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv2-4i-7dW">
+                                        <rect key="frame" x="14.5" y="268.5" width="269" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4pV-Hc-FHy" firstAttribute="leading" secondItem="M3W-Ky-ZSV" secondAttribute="leading" constant="40" id="Nj0-cd-UK0"/>
+                                    <constraint firstAttribute="trailing" secondItem="cNE-YY-Tax" secondAttribute="trailing" constant="30" id="TKA-M5-M4B"/>
+                                    <constraint firstAttribute="trailing" secondItem="4pV-Hc-FHy" secondAttribute="trailing" constant="40" id="YLm-yT-h9t"/>
+                                    <constraint firstItem="cNE-YY-Tax" firstAttribute="leading" secondItem="M3W-Ky-ZSV" secondAttribute="leading" constant="30" id="jYk-dV-P65"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M3W-Ky-ZSV" secondAttribute="trailing" constant="58" id="KY4-eI-Apo"/>
+                            <constraint firstItem="M3W-Ky-ZSV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="e1d-Bd-ZQM"/>
+                            <constraint firstItem="M3W-Ky-ZSV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="l6L-gq-Pxy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonExcluir" destination="OUw-Ez-A3N" id="zN7-DZ-ytc"/>
+                        <outlet property="buttonLimpar" destination="2bN-KD-v1u" id="3r9-kl-mwh"/>
+                        <outlet property="buttonSalvar" destination="eP4-Tr-lbv" id="dxQ-za-MY7"/>
+                        <outlet property="labelExibicao" destination="fv2-4i-7dW" id="sdz-Qx-KL3"/>
+                        <outlet property="labelIdentificacao" destination="dHT-Cu-uIG" id="IZM-Yj-aii"/>
+                        <outlet property="textFieldNome" destination="cNE-YY-Tax" id="RZc-LW-rKm"/>
+                        <outlet property="textFieldQuantidade" destination="4pV-Hc-FHy" id="Li6-0k-uKm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
