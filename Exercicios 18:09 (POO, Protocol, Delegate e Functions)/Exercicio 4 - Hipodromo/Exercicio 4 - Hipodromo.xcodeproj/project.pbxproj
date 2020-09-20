@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4080F52517C848006F0CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4080F42517C848006F0CF1 /* AppDelegate.swift */; };
+		FA4080F72517C848006F0CF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4080F62517C848006F0CF1 /* SceneDelegate.swift */; };
+		FA4080F92517C848006F0CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4080F82517C848006F0CF1 /* ViewController.swift */; };
+		FA4080FC2517C848006F0CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4080FA2517C848006F0CF1 /* Main.storyboard */; };
+		FA4080FE2517C84B006F0CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4080FD2517C84B006F0CF1 /* Assets.xcassets */; };
+		FA4081012517C84B006F0CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4080FF2517C84B006F0CF1 /* LaunchScreen.storyboard */; };
+		FA40810B2517C956006F0CF1 /* Apostadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40810A2517C956006F0CF1 /* Apostadores.swift */; };
+		FA40810D2517C966006F0CF1 /* KronikaTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40810C2517C966006F0CF1 /* KronikaTV.swift */; };
+		FA40810F2517C97E006F0CF1 /* CasasDeApostas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40810E2517C97E006F0CF1 /* CasasDeApostas.swift */; };
+		FA4081112517CAE7006F0CF1 /* ProtocolNotificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4081102517CAE7006F0CF1 /* ProtocolNotificacao.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA4080F12517C848006F0CF1 /* Exercicio 4 - Hipodromo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercicio 4 - Hipodromo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4080F42517C848006F0CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA4080F62517C848006F0CF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA4080F82517C848006F0CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA4080FB2517C848006F0CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA4080FD2517C84B006F0CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA4081002517C84B006F0CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA4081022517C84B006F0CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA40810A2517C956006F0CF1 /* Apostadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apostadores.swift; sourceTree = "<group>"; };
+		FA40810C2517C966006F0CF1 /* KronikaTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KronikaTV.swift; sourceTree = "<group>"; };
+		FA40810E2517C97E006F0CF1 /* CasasDeApostas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasasDeApostas.swift; sourceTree = "<group>"; };
+		FA4081102517CAE7006F0CF1 /* ProtocolNotificacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNotificacao.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4080EE2517C848006F0CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA4080E82517C848006F0CF1 = {
+			isa = PBXGroup;
+			children = (
+				FA4080F32517C848006F0CF1 /* Exercicio 4 - Hipodromo */,
+				FA4080F22517C848006F0CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4080F22517C848006F0CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4080F12517C848006F0CF1 /* Exercicio 4 - Hipodromo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4080F32517C848006F0CF1 /* Exercicio 4 - Hipodromo */ = {
+			isa = PBXGroup;
+			children = (
+				FA4080F42517C848006F0CF1 /* AppDelegate.swift */,
+				FA4080F62517C848006F0CF1 /* SceneDelegate.swift */,
+				FA4080F82517C848006F0CF1 /* ViewController.swift */,
+				FA4081102517CAE7006F0CF1 /* ProtocolNotificacao.swift */,
+				FA40810A2517C956006F0CF1 /* Apostadores.swift */,
+				FA40810C2517C966006F0CF1 /* KronikaTV.swift */,
+				FA40810E2517C97E006F0CF1 /* CasasDeApostas.swift */,
+				FA4080FA2517C848006F0CF1 /* Main.storyboard */,
+				FA4080FD2517C84B006F0CF1 /* Assets.xcassets */,
+				FA4080FF2517C84B006F0CF1 /* LaunchScreen.storyboard */,
+				FA4081022517C84B006F0CF1 /* Info.plist */,
+			);
+			path = "Exercicio 4 - Hipodromo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4080F02517C848006F0CF1 /* Exercicio 4 - Hipodromo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4081052517C84B006F0CF1 /* Build configuration list for PBXNativeTarget "Exercicio 4 - Hipodromo" */;
+			buildPhases = (
+				FA4080ED2517C848006F0CF1 /* Sources */,
+				FA4080EE2517C848006F0CF1 /* Frameworks */,
+				FA4080EF2517C848006F0CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Exercicio 4 - Hipodromo";
+			productName = "Exercicio 4 - Hipodromo";
+			productReference = FA4080F12517C848006F0CF1 /* Exercicio 4 - Hipodromo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA4080E92517C848006F0CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Dominique N Bezerra";
+				TargetAttributes = {
+					FA4080F02517C848006F0CF1 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = FA4080EC2517C848006F0CF1 /* Build configuration list for PBXProject "Exercicio 4 - Hipodromo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA4080E82517C848006F0CF1;
+			productRefGroup = FA4080F22517C848006F0CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4080F02517C848006F0CF1 /* Exercicio 4 - Hipodromo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA4080EF2517C848006F0CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4081012517C84B006F0CF1 /* LaunchScreen.storyboard in Resources */,
+				FA4080FE2517C84B006F0CF1 /* Assets.xcassets in Resources */,
+				FA4080FC2517C848006F0CF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4080ED2517C848006F0CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4080F92517C848006F0CF1 /* ViewController.swift in Sources */,
+				FA4080F52517C848006F0CF1 /* AppDelegate.swift in Sources */,
+				FA40810F2517C97E006F0CF1 /* CasasDeApostas.swift in Sources */,
+				FA4080F72517C848006F0CF1 /* SceneDelegate.swift in Sources */,
+				FA40810B2517C956006F0CF1 /* Apostadores.swift in Sources */,
+				FA4081112517CAE7006F0CF1 /* ProtocolNotificacao.swift in Sources */,
+				FA40810D2517C966006F0CF1 /* KronikaTV.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA4080FA2517C848006F0CF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4080FB2517C848006F0CF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA4080FF2517C84B006F0CF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4081002517C84B006F0CF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA4081032517C84B006F0CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA4081042517C84B006F0CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA4081062517C84B006F0CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Exercicio 4 - Hipodromo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominique.nascimento.Exercicio-4---Hipodromo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA4081072517C84B006F0CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Exercicio 4 - Hipodromo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominique.nascimento.Exercicio-4---Hipodromo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA4080EC2517C848006F0CF1 /* Build configuration list for PBXProject "Exercicio 4 - Hipodromo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4081032517C84B006F0CF1 /* Debug */,
+				FA4081042517C84B006F0CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4081052517C84B006F0CF1 /* Build configuration list for PBXNativeTarget "Exercicio 4 - Hipodromo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4081062517C84B006F0CF1 /* Debug */,
+				FA4081072517C84B006F0CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA4080E92517C848006F0CF1 /* Project object */;
+}
