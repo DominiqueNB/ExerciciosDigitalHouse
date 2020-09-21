@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9yV-7P-VTd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Two View Controller-->
+        <scene sceneID="pli-TF-mJx">
+            <objects>
+                <viewController id="9yV-7P-VTd" customClass="MyViewTwoViewController" customModule="_1_09_NineViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ud-Qv-Z6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-nx-dm5">
+                                <rect key="frame" x="145.5" y="373" width="123" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewTwoModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonMyViewTwoModal:" destination="9yV-7P-VTd" eventType="touchUpInside" id="uO5-IQ-WRe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kx-bT-JN9">
+                                <rect key="frame" x="130" y="433" width="154" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewTwoNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonMyViewTwoNavigation:" destination="9yV-7P-VTd" eventType="touchUpInside" id="kw3-7a-9Xz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9fm-nx-dm5" firstAttribute="centerX" secondItem="1ud-Qv-Z6r" secondAttribute="centerX" id="GjT-1i-UgU"/>
+                            <constraint firstItem="2Kx-bT-JN9" firstAttribute="centerX" secondItem="1ud-Qv-Z6r" secondAttribute="centerX" id="cAE-9l-5df"/>
+                            <constraint firstItem="2Kx-bT-JN9" firstAttribute="centerY" secondItem="1ud-Qv-Z6r" secondAttribute="centerY" id="fx6-0J-UAx"/>
+                            <constraint firstItem="2Kx-bT-JN9" firstAttribute="top" secondItem="9fm-nx-dm5" secondAttribute="bottom" constant="30" id="jh1-0T-fXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="itE-jn-dRw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvc-Ah-kWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="97"/>
+        </scene>
+    </scenes>
+</document>

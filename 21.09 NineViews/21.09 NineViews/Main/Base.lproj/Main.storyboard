@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xME-hq-kXB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_09_NineViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eA-kw-wef">
+                                <rect key="frame" x="166" y="233" width="82" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="MyViewOne">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxI-wu-VWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-6f-WIb">
+                                <rect key="frame" x="145" y="273" width="124" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewOneModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonOneModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEd-zU-arf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrw-74-Lxz">
+                                <rect key="frame" x="129.5" y="313" width="155" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewOneNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonOneNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXx-Nr-Ax7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2O-BI-BGB">
+                                <rect key="frame" x="166.5" y="393" width="81" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="MyViewTwo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QV2-SS-IAp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-0V-qMn">
+                                <rect key="frame" x="145.5" y="433" width="123" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewTwoModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTwoModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRe-yy-ENY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-Zd-4c7">
+                                <rect key="frame" x="143.5" y="473" width="127" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTwoNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZvV-Jw-zWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JK-4g-epj">
+                                <rect key="frame" x="160.5" y="543" width="93" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="MyViewThree">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qn2-3O-p4w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frg-os-LLO">
+                                <rect key="frame" x="139.5" y="583" width="135" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewThreeModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonThreeModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MrD-3x-pzi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7x-Tu-vdq">
+                                <rect key="frame" x="124" y="623" width="166" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewThreeNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonThreeNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zX0-7v-pki"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="frg-os-LLO" firstAttribute="top" secondItem="4JK-4g-epj" secondAttribute="bottom" constant="10" id="7Xx-jV-PRL"/>
+                            <constraint firstItem="c2O-BI-BGB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="81o-61-wTP"/>
+                            <constraint firstItem="4JK-4g-epj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9O-Qb-B61"/>
+                            <constraint firstItem="wqf-Zd-4c7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eol-RA-Gb5"/>
+                            <constraint firstItem="d7x-Tu-vdq" firstAttribute="top" secondItem="frg-os-LLO" secondAttribute="bottom" constant="10" id="ILQ-Ye-wJl"/>
+                            <constraint firstItem="dr9-0V-qMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QUK-7L-aGF"/>
+                            <constraint firstItem="Yrw-74-Lxz" firstAttribute="top" secondItem="Dlp-6f-WIb" secondAttribute="bottom" constant="10" id="Sn4-RI-NTC"/>
+                            <constraint firstItem="wqf-Zd-4c7" firstAttribute="top" secondItem="dr9-0V-qMn" secondAttribute="bottom" constant="10" id="UU8-Dn-rtE"/>
+                            <constraint firstItem="dr9-0V-qMn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UjU-wk-b36"/>
+                            <constraint firstItem="4JK-4g-epj" firstAttribute="top" secondItem="wqf-Zd-4c7" secondAttribute="bottom" constant="40" id="VpO-77-XAv"/>
+                            <constraint firstItem="Dlp-6f-WIb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alo-bt-kq7"/>
+                            <constraint firstItem="Yrw-74-Lxz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmG-Gq-juW"/>
+                            <constraint firstItem="d7x-Tu-vdq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fDL-PU-gHd"/>
+                            <constraint firstItem="frg-os-LLO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fYC-fR-IzZ"/>
+                            <constraint firstItem="dr9-0V-qMn" firstAttribute="top" secondItem="c2O-BI-BGB" secondAttribute="bottom" constant="10" id="nKo-VD-QR6"/>
+                            <constraint firstItem="Dlp-6f-WIb" firstAttribute="top" secondItem="8eA-kw-wef" secondAttribute="bottom" constant="10" id="oPd-bT-eTf"/>
+                            <constraint firstItem="c2O-BI-BGB" firstAttribute="top" secondItem="Yrw-74-Lxz" secondAttribute="bottom" constant="50" id="p4d-uQ-HBO"/>
+                            <constraint firstItem="8eA-kw-wef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uS0-k4-7Nc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ezO-Cg-Kzd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9c8-rC-Nbb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xME-hq-kXB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N2G-UL-qdx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SpM-RS-tig"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZg-Xh-nnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

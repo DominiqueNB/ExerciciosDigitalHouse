@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NBB-sj-SnN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Three View Controller-->
+        <scene sceneID="AkE-RO-cDa">
+            <objects>
+                <viewController id="NBB-sj-SnN" customClass="MyViewThreeViewController" customModule="_1_09_NineViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykc-21-ACg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5P-Ze-y5O">
+                                <rect key="frame" x="139.5" y="373" width="135" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewThreeModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonMyViewThreeModal:" destination="NBB-sj-SnN" eventType="touchUpInside" id="XiM-5z-NFc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2t-Pc-bSz">
+                                <rect key="frame" x="124" y="433" width="166" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewThreeNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonMyViewThreeNavigation:" destination="NBB-sj-SnN" eventType="touchUpInside" id="oMe-AK-x6u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J2t-Pc-bSz" firstAttribute="centerX" secondItem="ykc-21-ACg" secondAttribute="centerX" id="7SZ-NJ-UWk"/>
+                            <constraint firstItem="J2t-Pc-bSz" firstAttribute="top" secondItem="e5P-Ze-y5O" secondAttribute="bottom" constant="30" id="S3F-na-vWK"/>
+                            <constraint firstItem="e5P-Ze-y5O" firstAttribute="centerX" secondItem="ykc-21-ACg" secondAttribute="centerX" id="aHS-ZK-RVJ"/>
+                            <constraint firstItem="J2t-Pc-bSz" firstAttribute="centerY" secondItem="ykc-21-ACg" secondAttribute="centerY" id="xsA-K2-l0p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ktq-k6-MZd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mj-wo-42G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="98"/>
+        </scene>
+    </scenes>
+</document>

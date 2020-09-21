@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BdC-MH-1Jt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View One View Controller-->
+        <scene sceneID="Hix-f8-xd3">
+            <objects>
+                <viewController id="BdC-MH-1Jt" customClass="MyViewOneViewController" customModule="_1_09_NineViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dxN-Pz-gcj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxk-7o-gJJ">
+                                <rect key="frame" x="145" y="373" width="124" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewOneModal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButonMyViewOneModal:" destination="BdC-MH-1Jt" eventType="touchUpInside" id="u8L-qE-KF0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmP-pT-Qno">
+                                <rect key="frame" x="129.5" y="433" width="155" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MyViewOneNavigation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButonMyViewOneNavigation:" destination="BdC-MH-1Jt" eventType="touchUpInside" id="haU-VQ-Kxs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lxk-7o-gJJ" firstAttribute="centerX" secondItem="dxN-Pz-gcj" secondAttribute="centerX" id="Yun-3H-FPv"/>
+                            <constraint firstItem="ZmP-pT-Qno" firstAttribute="centerX" secondItem="dxN-Pz-gcj" secondAttribute="centerX" id="jsI-RL-qhp"/>
+                            <constraint firstItem="ZmP-pT-Qno" firstAttribute="centerY" secondItem="dxN-Pz-gcj" secondAttribute="centerY" id="ydY-NO-5tg"/>
+                            <constraint firstItem="ZmP-pT-Qno" firstAttribute="top" secondItem="lxk-7o-gJJ" secondAttribute="bottom" constant="30" id="zX5-7H-zwB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kmF-yS-MB3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSm-fE-MEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="158.70535714285714"/>
+        </scene>
+    </scenes>
+</document>

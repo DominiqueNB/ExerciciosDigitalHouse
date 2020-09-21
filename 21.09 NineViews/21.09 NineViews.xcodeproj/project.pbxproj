@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA208CCD251945560029E7CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CCC251945560029E7CC /* AppDelegate.swift */; };
+		FA208CCF251945560029E7CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CCE251945560029E7CC /* SceneDelegate.swift */; };
+		FA208CD1251945560029E7CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CD0251945560029E7CC /* ViewController.swift */; };
+		FA208CD4251945560029E7CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CD2251945560029E7CC /* Main.storyboard */; };
+		FA208CD6251945580029E7CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA208CD5251945580029E7CC /* Assets.xcassets */; };
+		FA208CD9251945580029E7CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CD7251945580029E7CC /* LaunchScreen.storyboard */; };
+		FA208CE725194C1A0029E7CC /* MyViewOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CE625194C1A0029E7CC /* MyViewOneViewController.swift */; };
+		FA208CE925194C400029E7CC /* MyViewOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CE825194C400029E7CC /* MyViewOne.storyboard */; };
+		FA208CF125194EA10029E7CC /* MyViewThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CF025194EA10029E7CC /* MyViewThreeViewController.swift */; };
+		FA208CF325194EB70029E7CC /* MyViewThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CF225194EB70029E7CC /* MyViewThree.storyboard */; };
+		FA208CF6251951930029E7CC /* MyViewOneModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CF5251951930029E7CC /* MyViewOneModalViewController.swift */; };
+		FA208CF8251951A90029E7CC /* MyViewOneModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CF7251951A90029E7CC /* MyViewOneModal.storyboard */; };
+		FA208CFB251955390029E7CC /* MyViewOneNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208CFA251955390029E7CC /* MyViewOneNavigationViewController.swift */; };
+		FA208CFD2519554A0029E7CC /* MyViewOneNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208CFC2519554A0029E7CC /* MyViewOneNavigation.storyboard */; };
+		FA208D05251958620029E7CC /* MyViewTwoNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208D04251958620029E7CC /* MyViewTwoNavigationViewController.swift */; };
+		FA208D07251958710029E7CC /* MyViewTwoNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208D06251958710029E7CC /* MyViewTwoNavigation.storyboard */; };
+		FA208D0B251958E60029E7CC /* MyViewThreeModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208D0A251958E60029E7CC /* MyViewThreeModalViewController.swift */; };
+		FA208D0F251959440029E7CC /* MyViewThreeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208D0E251959440029E7CC /* MyViewThreeNavigationViewController.swift */; };
+		FA208D11251959510029E7CC /* MyViewThreeNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208D10251959510029E7CC /* MyViewThreeNavigation.storyboard */; };
+		FA208D1525195D270029E7CC /* MyViewThreeModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208D1425195D270029E7CC /* MyViewThreeModal.storyboard */; };
+		FA208D1A25195FFD0029E7CC /* MyViewTwoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208D1925195FFD0029E7CC /* MyViewTwoModalViewController.swift */; };
+		FA208D1C2519600D0029E7CC /* MyViewTwoModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208D1B2519600D0029E7CC /* MyViewTwoModal.storyboard */; };
+		FA208D23251963B70029E7CC /* MyViewTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA208D22251963B70029E7CC /* MyViewTwoViewController.swift */; };
+		FA208D25251963D50029E7CC /* MyViewTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA208D24251963D50029E7CC /* MyViewTwo.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA208CC9251945560029E7CC /* 21.09 NineViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "21.09 NineViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA208CCC251945560029E7CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA208CCE251945560029E7CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA208CD0251945560029E7CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA208CD3251945560029E7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA208CD5251945580029E7CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA208CD8251945580029E7CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA208CDA251945580029E7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA208CE625194C1A0029E7CC /* MyViewOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewOneViewController.swift; sourceTree = "<group>"; };
+		FA208CE825194C400029E7CC /* MyViewOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewOne.storyboard; sourceTree = "<group>"; };
+		FA208CF025194EA10029E7CC /* MyViewThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewThreeViewController.swift; sourceTree = "<group>"; };
+		FA208CF225194EB70029E7CC /* MyViewThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewThree.storyboard; sourceTree = "<group>"; };
+		FA208CF5251951930029E7CC /* MyViewOneModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewOneModalViewController.swift; sourceTree = "<group>"; };
+		FA208CF7251951A90029E7CC /* MyViewOneModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewOneModal.storyboard; sourceTree = "<group>"; };
+		FA208CFA251955390029E7CC /* MyViewOneNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewOneNavigationViewController.swift; sourceTree = "<group>"; };
+		FA208CFC2519554A0029E7CC /* MyViewOneNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewOneNavigation.storyboard; sourceTree = "<group>"; };
+		FA208D04251958620029E7CC /* MyViewTwoNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewTwoNavigationViewController.swift; sourceTree = "<group>"; };
+		FA208D06251958710029E7CC /* MyViewTwoNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewTwoNavigation.storyboard; sourceTree = "<group>"; };
+		FA208D0A251958E60029E7CC /* MyViewThreeModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewThreeModalViewController.swift; sourceTree = "<group>"; };
+		FA208D0E251959440029E7CC /* MyViewThreeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewThreeNavigationViewController.swift; sourceTree = "<group>"; };
+		FA208D10251959510029E7CC /* MyViewThreeNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewThreeNavigation.storyboard; sourceTree = "<group>"; };
+		FA208D1425195D270029E7CC /* MyViewThreeModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewThreeModal.storyboard; sourceTree = "<group>"; };
+		FA208D1925195FFD0029E7CC /* MyViewTwoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewTwoModalViewController.swift; sourceTree = "<group>"; };
+		FA208D1B2519600D0029E7CC /* MyViewTwoModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewTwoModal.storyboard; sourceTree = "<group>"; };
+		FA208D22251963B70029E7CC /* MyViewTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewTwoViewController.swift; sourceTree = "<group>"; };
+		FA208D24251963D50029E7CC /* MyViewTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewTwo.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA208CC6251945560029E7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA208CC0251945560029E7CC = {
+			isa = PBXGroup;
+			children = (
+				FA208CCB251945560029E7CC /* 21.09 NineViews */,
+				FA208CCA251945560029E7CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA208CCA251945560029E7CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CC9251945560029E7CC /* 21.09 NineViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA208CCB251945560029E7CC /* 21.09 NineViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CCC251945560029E7CC /* AppDelegate.swift */,
+				FA208CCE251945560029E7CC /* SceneDelegate.swift */,
+				FA208CE0251945730029E7CC /* Main */,
+				FA208CE3251949810029E7CC /* MyViewOne */,
+				FA208CF4251951650029E7CC /* MyViewOneModal */,
+				FA208CF9251955060029E7CC /* MyViewOneNavigation */,
+				FA208D212519637C0029E7CC /* MyViewTwo */,
+				FA208D1825195FAF0029E7CC /* MyViewTwoModal */,
+				FA208CFF2519577D0029E7CC /* MyViewTwoNavigation */,
+				FA208CE525194BBE0029E7CC /* MyViewThree */,
+				FA208D082519589D0029E7CC /* MyViewThreeModal */,
+				FA208D09251958BA0029E7CC /* MyViewThreeNavigation */,
+				FA208CD5251945580029E7CC /* Assets.xcassets */,
+				FA208CD7251945580029E7CC /* LaunchScreen.storyboard */,
+				FA208CDA251945580029E7CC /* Info.plist */,
+			);
+			path = "21.09 NineViews";
+			sourceTree = "<group>";
+		};
+		FA208CE0251945730029E7CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CD2251945560029E7CC /* Main.storyboard */,
+				FA208CD0251945560029E7CC /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FA208CE3251949810029E7CC /* MyViewOne */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CE625194C1A0029E7CC /* MyViewOneViewController.swift */,
+				FA208CE825194C400029E7CC /* MyViewOne.storyboard */,
+			);
+			path = MyViewOne;
+			sourceTree = "<group>";
+		};
+		FA208CE525194BBE0029E7CC /* MyViewThree */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CF025194EA10029E7CC /* MyViewThreeViewController.swift */,
+				FA208CF225194EB70029E7CC /* MyViewThree.storyboard */,
+			);
+			path = MyViewThree;
+			sourceTree = "<group>";
+		};
+		FA208CF4251951650029E7CC /* MyViewOneModal */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CF5251951930029E7CC /* MyViewOneModalViewController.swift */,
+				FA208CF7251951A90029E7CC /* MyViewOneModal.storyboard */,
+			);
+			path = MyViewOneModal;
+			sourceTree = "<group>";
+		};
+		FA208CF9251955060029E7CC /* MyViewOneNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA208CFA251955390029E7CC /* MyViewOneNavigationViewController.swift */,
+				FA208CFC2519554A0029E7CC /* MyViewOneNavigation.storyboard */,
+			);
+			path = MyViewOneNavigation;
+			sourceTree = "<group>";
+		};
+		FA208CFF2519577D0029E7CC /* MyViewTwoNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA208D04251958620029E7CC /* MyViewTwoNavigationViewController.swift */,
+				FA208D06251958710029E7CC /* MyViewTwoNavigation.storyboard */,
+			);
+			path = MyViewTwoNavigation;
+			sourceTree = "<group>";
+		};
+		FA208D082519589D0029E7CC /* MyViewThreeModal */ = {
+			isa = PBXGroup;
+			children = (
+				FA208D0A251958E60029E7CC /* MyViewThreeModalViewController.swift */,
+				FA208D1425195D270029E7CC /* MyViewThreeModal.storyboard */,
+			);
+			path = MyViewThreeModal;
+			sourceTree = "<group>";
+		};
+		FA208D09251958BA0029E7CC /* MyViewThreeNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA208D0E251959440029E7CC /* MyViewThreeNavigationViewController.swift */,
+				FA208D10251959510029E7CC /* MyViewThreeNavigation.storyboard */,
+			);
+			path = MyViewThreeNavigation;
+			sourceTree = "<group>";
+		};
+		FA208D1825195FAF0029E7CC /* MyViewTwoModal */ = {
+			isa = PBXGroup;
+			children = (
+				FA208D1925195FFD0029E7CC /* MyViewTwoModalViewController.swift */,
+				FA208D1B2519600D0029E7CC /* MyViewTwoModal.storyboard */,
+			);
+			path = MyViewTwoModal;
+			sourceTree = "<group>";
+		};
+		FA208D212519637C0029E7CC /* MyViewTwo */ = {
+			isa = PBXGroup;
+			children = (
+				FA208D22251963B70029E7CC /* MyViewTwoViewController.swift */,
+				FA208D24251963D50029E7CC /* MyViewTwo.storyboard */,
+			);
+			path = MyViewTwo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA208CC8251945560029E7CC /* 21.09 NineViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA208CDD251945580029E7CC /* Build configuration list for PBXNativeTarget "21.09 NineViews" */;
+			buildPhases = (
+				FA208CC5251945560029E7CC /* Sources */,
+				FA208CC6251945560029E7CC /* Frameworks */,
+				FA208CC7251945560029E7CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "21.09 NineViews";
+			productName = "21.09 NineViews";
+			productReference = FA208CC9251945560029E7CC /* 21.09 NineViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA208CC1251945560029E7CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Dominique N Bezerra";
+				TargetAttributes = {
+					FA208CC8251945560029E7CC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = FA208CC4251945560029E7CC /* Build configuration list for PBXProject "21.09 NineViews" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA208CC0251945560029E7CC;
+			productRefGroup = FA208CCA251945560029E7CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA208CC8251945560029E7CC /* 21.09 NineViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA208CC7251945560029E7CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA208D07251958710029E7CC /* MyViewTwoNavigation.storyboard in Resources */,
+				FA208CFD2519554A0029E7CC /* MyViewOneNavigation.storyboard in Resources */,
+				FA208CD9251945580029E7CC /* LaunchScreen.storyboard in Resources */,
+				FA208D11251959510029E7CC /* MyViewThreeNavigation.storyboard in Resources */,
+				FA208CD6251945580029E7CC /* Assets.xcassets in Resources */,
+				FA208D25251963D50029E7CC /* MyViewTwo.storyboard in Resources */,
+				FA208CF325194EB70029E7CC /* MyViewThree.storyboard in Resources */,
+				FA208CE925194C400029E7CC /* MyViewOne.storyboard in Resources */,
+				FA208D1525195D270029E7CC /* MyViewThreeModal.storyboard in Resources */,
+				FA208D1C2519600D0029E7CC /* MyViewTwoModal.storyboard in Resources */,
+				FA208CF8251951A90029E7CC /* MyViewOneModal.storyboard in Resources */,
+				FA208CD4251945560029E7CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA208CC5251945560029E7CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA208CF125194EA10029E7CC /* MyViewThreeViewController.swift in Sources */,
+				FA208CD1251945560029E7CC /* ViewController.swift in Sources */,
+				FA208CCD251945560029E7CC /* AppDelegate.swift in Sources */,
+				FA208D0F251959440029E7CC /* MyViewThreeNavigationViewController.swift in Sources */,
+				FA208D1A25195FFD0029E7CC /* MyViewTwoModalViewController.swift in Sources */,
+				FA208CFB251955390029E7CC /* MyViewOneNavigationViewController.swift in Sources */,
+				FA208D23251963B70029E7CC /* MyViewTwoViewController.swift in Sources */,
+				FA208CE725194C1A0029E7CC /* MyViewOneViewController.swift in Sources */,
+				FA208CCF251945560029E7CC /* SceneDelegate.swift in Sources */,
+				FA208D0B251958E60029E7CC /* MyViewThreeModalViewController.swift in Sources */,
+				FA208D05251958620029E7CC /* MyViewTwoNavigationViewController.swift in Sources */,
+				FA208CF6251951930029E7CC /* MyViewOneModalViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA208CD2251945560029E7CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA208CD3251945560029E7CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA208CD7251945580029E7CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA208CD8251945580029E7CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA208CDB251945580029E7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA208CDC251945580029E7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA208CDE251945580029E7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "21.09 NineViews/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominique.nascimento.-1-09-NineViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA208CDF251945580029E7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "21.09 NineViews/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dominique.nascimento.-1-09-NineViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA208CC4251945560029E7CC /* Build configuration list for PBXProject "21.09 NineViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA208CDB251945580029E7CC /* Debug */,
+				FA208CDC251945580029E7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA208CDD251945580029E7CC /* Build configuration list for PBXNativeTarget "21.09 NineViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA208CDE251945580029E7CC /* Debug */,
+				FA208CDF251945580029E7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA208CC1251945560029E7CC /* Project object */;
+}
