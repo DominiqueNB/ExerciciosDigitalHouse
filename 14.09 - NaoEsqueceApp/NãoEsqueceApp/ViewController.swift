@@ -13,20 +13,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldNome: UITextField!
     @IBOutlet weak var textFieldQuantidade: UITextField!
     
-    @IBOutlet weak var labelIdentificacao: UILabel!
+    @IBOutlet weak var tableViewList: UITableView!
+//    @IBOutlet weak var labelIdentificacao: UILabel!
     @IBOutlet weak var buttonSalvar: UIButton!
     @IBOutlet weak var buttonLimpar: UIButton!
     @IBOutlet weak var buttonExcluir: UIButton!
-    @IBOutlet weak var labelExibicao: UILabel!
+//    @IBOutlet weak var labelExibicao: UILabel!
     
     
     var item = ItemRepositorio(arrayItem: [])
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         textFieldNome.delegate = self
         textFieldQuantidade.delegate = self
+        
+        tableViewList.delegate = self
+        tableViewList.dataSource = self
         
         
     }
@@ -37,9 +42,11 @@ class ViewController: UIViewController {
         if let nome = textFieldNome.text, let quantidade = textFieldQuantidade.text {
             item.cadastrar(nome: nome, quantidade: Int(quantidade)!)
             setLabelDeExibicao()
-            labelIdentificacao.text = String(nome) + ": " + String (quantidade)
+//            labelIdentificacao.text = String(nome) + ": " + String (quantidade)
             limpaCampos()
             atualizarButtonsELabels()
+            tableViewList.reloadData()
+            
         } else {
             print("Recebeu nil")
         }
@@ -93,7 +100,7 @@ class ViewController: UIViewController {
         for product in item.arrayItem {
             labelToReturn += "\(product.quantidade): \(product.nome)\n"
         }
-        labelExibicao.text = labelToReturn
+//        labelExibicao.text = labelToReturn
     }
     
     func atualizarButtonsELabels() {
@@ -128,3 +135,24 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        textFieldNome.text = item.arrayItem[indexPath.row].nome
+        textFieldQuantidade.text = String(item.arrayItem[indexPath.row].quantidade)
+        atualizarButtonsELabels()
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return item.arrayItem.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "\(item.arrayItem[indexPath.row].nome)                     \(item.arrayItem[indexPath.row].quantidade)"
+        return cell
+    }
+    
+    
+}
