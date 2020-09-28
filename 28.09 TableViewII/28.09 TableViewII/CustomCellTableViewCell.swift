@@ -9,6 +9,7 @@ import UIKit
 
 class CustomCellTableViewCell: UITableViewCell {
     @IBOutlet weak var labelCell: UILabel!
+    @IBOutlet weak var labelEmail: UILabel!
     
     @IBOutlet weak var imageViewPhoto: UIImageView!
     
@@ -20,7 +21,12 @@ class CustomCellTableViewCell: UITableViewCell {
     func setup(person: Person) {
         labelCell.text = ""
         labelCell.text =  person.name
-        imageView?.image = UIImage(named: person.image)
+        imageViewPhoto.image = UIImage(named: person.image)
+        labelEmail.text = person.email
+        imageViewPhoto.layer.cornerRadius = imageViewPhoto.frame.size.height/2
+        
+        
+        
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

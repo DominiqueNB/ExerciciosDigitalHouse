@@ -27,6 +27,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mA8-20-QvI">
+                                                    <rect key="frame" x="105" y="24.5" width="289" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY4-Fe-On6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-GD-9HE">
+                                                            <rect key="frame" x="0.0" y="21.5" width="40.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jFg-qf-jBo">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90.5"/>
                                                     <constraints>
@@ -34,25 +51,20 @@
                                                         <constraint firstAttribute="width" constant="90" id="xYa-hJ-Yu1"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY4-Fe-On6">
-                                                    <rect key="frame" x="130" y="35" width="264" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="mA8-20-QvI" firstAttribute="leading" secondItem="jFg-qf-jBo" secondAttribute="trailing" constant="15" id="Bva-Jh-PyL"/>
                                                 <constraint firstAttribute="bottom" secondItem="jFg-qf-jBo" secondAttribute="bottom" id="Flp-8T-8gZ"/>
+                                                <constraint firstItem="mA8-20-QvI" firstAttribute="centerY" secondItem="XXF-na-kPm" secondAttribute="centerY" id="J8w-dr-gV0"/>
                                                 <constraint firstItem="jFg-qf-jBo" firstAttribute="leading" secondItem="XXF-na-kPm" secondAttribute="leading" id="Pge-zu-duH"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dY4-Fe-On6" secondAttribute="trailing" id="Ypx-6R-Nky"/>
-                                                <constraint firstItem="dY4-Fe-On6" firstAttribute="leading" secondItem="jFg-qf-jBo" secondAttribute="trailing" constant="40" id="gFK-yL-Mq2"/>
                                                 <constraint firstItem="jFg-qf-jBo" firstAttribute="top" secondItem="XXF-na-kPm" secondAttribute="top" id="hyi-XB-okE"/>
-                                                <constraint firstItem="dY4-Fe-On6" firstAttribute="centerY" secondItem="XXF-na-kPm" secondAttribute="centerY" id="wsv-ck-aOO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mA8-20-QvI" secondAttribute="trailing" id="qtz-X5-b6E"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageViewPhoto" destination="jFg-qf-jBo" id="LU0-m4-aBB"/>
                                             <outlet property="labelCell" destination="dY4-Fe-On6" id="rFu-Eo-hPy"/>
+                                            <outlet property="labelEmail" destination="IQ4-GD-9HE" id="8Ng-vb-V4R"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -79,6 +91,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

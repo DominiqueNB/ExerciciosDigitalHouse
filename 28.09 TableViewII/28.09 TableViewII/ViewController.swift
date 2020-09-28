@@ -19,11 +19,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableViewList.delegate = self
         tableViewList.dataSource = self
-        arrayPeople.append(Person(name: "João", image: "joao.png"))
-        arrayPeople.append(Person(name: "Maria", image: "maria.png"))
-        arrayPeople.append(Person(name: "José", image: "jose.png"))
-        arrayPeople.append(Person(name: "Carlos", image: "carlos.jpeg"))
-        arrayPeople.append(Person(name: "Pedro", image: "pedro.jpg"))
+        arrayPeople.append(Person(name: "João", image: "joao.png", email: "joao@email.com"))
+        arrayPeople.append(Person(name: "Maria", image: "maria.png", email: "maria@email.com"))
+        arrayPeople.append(Person(name: "José", image: "jose.png", email: "jose@email.com"))
+        arrayPeople.append(Person(name: "Carlos", image: "carlos.jpeg", email: "carlos@email.com"))
+        arrayPeople.append(Person(name: "Pedro", image: "pedro.jpg", email: "pedro@email.com"))
     }
 
 
