@@ -11,6 +11,19 @@ class AnimalsCell: UITableViewCell {
 
     @IBOutlet weak var AnimalCell: UIView!
     
+    @IBOutlet weak var textLabelSpecies: UILabel!
+    @IBOutlet weak var textLabelBreed: UILabel!
+    @IBOutlet weak var textLabelName: UILabel!
+    @IBOutlet weak var textLabelWeight: UILabel!
+    
+    func setup(animal: Animal) {
+        textLabelName.text = animal.name
+        textLabelBreed.text = animal.breed
+        textLabelWeight.text = animal.weight
+        textLabelSpecies.text = animal.species
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

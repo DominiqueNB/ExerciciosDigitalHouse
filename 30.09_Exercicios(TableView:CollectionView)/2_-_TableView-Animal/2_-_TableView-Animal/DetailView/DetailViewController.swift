@@ -17,7 +17,12 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func settedLable(animal: Animal) {
+        textLabelName.text = animal.name
+    }
+    
     @IBAction func actionButtonClose(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     /*
