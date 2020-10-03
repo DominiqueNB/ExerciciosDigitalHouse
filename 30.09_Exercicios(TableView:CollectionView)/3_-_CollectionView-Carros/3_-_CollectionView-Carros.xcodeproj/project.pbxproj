@@ -13,6 +13,20 @@
 		3318731F252501690082EDBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3318731D252501690082EDBF /* Main.storyboard */; };
 		331873212525016A0082EDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331873202525016A0082EDBF /* Assets.xcassets */; };
 		331873242525016A0082EDBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331873222525016A0082EDBF /* LaunchScreen.storyboard */; };
+		33D8AE5225266DBE004E7400 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE5125266DBE004E7400 /* CollectionViewCell.swift */; };
+		33D8AE5D252672B2004E7400 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE5C252672B2004E7400 /* Car.swift */; };
+		33D8AE692526738F004E7400 /* car9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE5F2526738E004E7400 /* car9.jpg */; };
+		33D8AE6A2526738F004E7400 /* car10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE602526738E004E7400 /* car10.jpg */; };
+		33D8AE6B2526738F004E7400 /* car6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE612526738E004E7400 /* car6.jpg */; };
+		33D8AE6E2526738F004E7400 /* car5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE642526738F004E7400 /* car5.jpg */; };
+		33D8AE702526738F004E7400 /* car7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE662526738F004E7400 /* car7.jpeg */; };
+		33D8AE712526738F004E7400 /* car8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE672526738F004E7400 /* car8.jpg */; };
+		33D8AE7C2527ADAA004E7400 /* car1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE782527ADAA004E7400 /* car1.jpeg */; };
+		33D8AE7D2527ADAA004E7400 /* car3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE792527ADAA004E7400 /* car3.jpg */; };
+		33D8AE7E2527ADAA004E7400 /* car2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE7A2527ADAA004E7400 /* car2.jpg */; };
+		33D8AE7F2527ADAA004E7400 /* car4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE7B2527ADAA004E7400 /* car4.jpg */; };
+		33D8AE832527B14E004E7400 /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE822527B14E004E7400 /* DetailViewViewController.swift */; };
+		33D8AE872527B558004E7400 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE862527B558004E7400 /* DetailView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,20 @@
 		331873202525016A0082EDBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331873232525016A0082EDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331873252525016A0082EDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D8AE5125266DBE004E7400 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		33D8AE5C252672B2004E7400 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		33D8AE5F2526738E004E7400 /* car9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car9.jpg; sourceTree = "<group>"; };
+		33D8AE602526738E004E7400 /* car10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car10.jpg; sourceTree = "<group>"; };
+		33D8AE612526738E004E7400 /* car6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car6.jpg; sourceTree = "<group>"; };
+		33D8AE642526738F004E7400 /* car5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car5.jpg; sourceTree = "<group>"; };
+		33D8AE662526738F004E7400 /* car7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car7.jpeg; sourceTree = "<group>"; };
+		33D8AE672526738F004E7400 /* car8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car8.jpg; sourceTree = "<group>"; };
+		33D8AE782527ADAA004E7400 /* car1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car1.jpeg; sourceTree = "<group>"; };
+		33D8AE792527ADAA004E7400 /* car3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car3.jpg; sourceTree = "<group>"; };
+		33D8AE7A2527ADAA004E7400 /* car2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car2.jpg; sourceTree = "<group>"; };
+		33D8AE7B2527ADAA004E7400 /* car4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car4.jpg; sourceTree = "<group>"; };
+		33D8AE822527B14E004E7400 /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
+		33D8AE862527B558004E7400 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +86,35 @@
 			children = (
 				33187317252501690082EDBF /* AppDelegate.swift */,
 				33187319252501690082EDBF /* SceneDelegate.swift */,
+				33D8AE5C252672B2004E7400 /* Car.swift */,
 				3318731B252501690082EDBF /* ViewController.swift */,
 				3318731D252501690082EDBF /* Main.storyboard */,
+				33D8AE5125266DBE004E7400 /* CollectionViewCell.swift */,
 				331873202525016A0082EDBF /* Assets.xcassets */,
+				33D8AE5425266DD3004E7400 /* DetailView */,
 				331873222525016A0082EDBF /* LaunchScreen.storyboard */,
+				33D8AE782527ADAA004E7400 /* car1.jpeg */,
+				33D8AE7A2527ADAA004E7400 /* car2.jpg */,
+				33D8AE792527ADAA004E7400 /* car3.jpg */,
+				33D8AE7B2527ADAA004E7400 /* car4.jpg */,
+				33D8AE642526738F004E7400 /* car5.jpg */,
+				33D8AE612526738E004E7400 /* car6.jpg */,
+				33D8AE662526738F004E7400 /* car7.jpeg */,
+				33D8AE672526738F004E7400 /* car8.jpg */,
+				33D8AE5F2526738E004E7400 /* car9.jpg */,
+				33D8AE602526738E004E7400 /* car10.jpg */,
 				331873252525016A0082EDBF /* Info.plist */,
 			);
 			path = "3_-_CollectionView-Carros";
+			sourceTree = "<group>";
+		};
+		33D8AE5425266DD3004E7400 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AE822527B14E004E7400 /* DetailViewViewController.swift */,
+				33D8AE862527B558004E7400 /* DetailView.storyboard */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +174,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D8AE712526738F004E7400 /* car8.jpg in Resources */,
+				33D8AE7C2527ADAA004E7400 /* car1.jpeg in Resources */,
+				33D8AE872527B558004E7400 /* DetailView.storyboard in Resources */,
 				331873242525016A0082EDBF /* LaunchScreen.storyboard in Resources */,
+				33D8AE7F2527ADAA004E7400 /* car4.jpg in Resources */,
+				33D8AE6A2526738F004E7400 /* car10.jpg in Resources */,
+				33D8AE7D2527ADAA004E7400 /* car3.jpg in Resources */,
+				33D8AE692526738F004E7400 /* car9.jpg in Resources */,
 				331873212525016A0082EDBF /* Assets.xcassets in Resources */,
+				33D8AE6E2526738F004E7400 /* car5.jpg in Resources */,
+				33D8AE6B2526738F004E7400 /* car6.jpg in Resources */,
+				33D8AE7E2527ADAA004E7400 /* car2.jpg in Resources */,
+				33D8AE702526738F004E7400 /* car7.jpeg in Resources */,
 				3318731F252501690082EDBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +200,9 @@
 			files = (
 				3318731C252501690082EDBF /* ViewController.swift in Sources */,
 				33187318252501690082EDBF /* AppDelegate.swift in Sources */,
+				33D8AE5D252672B2004E7400 /* Car.swift in Sources */,
+				33D8AE5225266DBE004E7400 /* CollectionViewCell.swift in Sources */,
+				33D8AE832527B14E004E7400 /* DetailViewViewController.swift in Sources */,
 				3318731A252501690082EDBF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

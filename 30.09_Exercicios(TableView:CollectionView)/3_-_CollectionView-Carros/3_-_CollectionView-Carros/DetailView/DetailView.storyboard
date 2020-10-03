@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c8R-Hz-o7P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View View Controller-->
+        <scene sceneID="iVL-Be-EFk">
+            <objects>
+                <viewController id="c8R-Hz-o7P" customClass="DetailViewViewController" customModule="____CollectionView_Carros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXN-5b-ThC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6P2-3w-ctw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yco-wl-g9f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yco-wl-g9f" firstAttribute="bottom" secondItem="6P2-3w-ctw" secondAttribute="bottom" id="1g1-6x-NMD"/>
+                            <constraint firstItem="6P2-3w-ctw" firstAttribute="centerX" secondItem="xXN-5b-ThC" secondAttribute="centerX" id="Q6f-Z2-W9S"/>
+                            <constraint firstItem="6P2-3w-ctw" firstAttribute="top" secondItem="yco-wl-g9f" secondAttribute="top" id="nX0-CU-fUk"/>
+                            <constraint firstItem="yco-wl-g9f" firstAttribute="trailing" secondItem="6P2-3w-ctw" secondAttribute="trailing" id="utS-5o-rXT"/>
+                            <constraint firstItem="6P2-3w-ctw" firstAttribute="leading" secondItem="yco-wl-g9f" secondAttribute="leading" id="yrV-Zc-JIg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FDa-Uu-Orq"/>
+                    <connections>
+                        <outlet property="imageViewDetail" destination="6P2-3w-ctw" id="5S0-Jk-lua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8M9-ib-BFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.1449275362319" y="35.491071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
