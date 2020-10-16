@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bjz-cA-euA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View View Controller-->
+        <scene sceneID="uS2-BT-aJN">
+            <objects>
+                <viewController id="Bjz-cA-euA" customClass="DetailViewViewController" customModule="_0_05_ReviewExercicio3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNM-0F-Qdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZDg-15-Yqq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gi9-AU-olg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZDg-15-Yqq" firstAttribute="top" secondItem="Gi9-AU-olg" secondAttribute="top" id="09H-80-2la"/>
+                            <constraint firstItem="Gi9-AU-olg" firstAttribute="trailing" secondItem="ZDg-15-Yqq" secondAttribute="trailing" id="8RS-wX-gr1"/>
+                            <constraint firstItem="ZDg-15-Yqq" firstAttribute="leading" secondItem="Gi9-AU-olg" secondAttribute="leading" id="h9G-Bg-vyf"/>
+                            <constraint firstItem="Gi9-AU-olg" firstAttribute="bottom" secondItem="ZDg-15-Yqq" secondAttribute="bottom" id="nuc-cd-hQS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDetail" destination="ZDg-15-Yqq" id="eyn-u2-Qvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abH-iW-Czu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

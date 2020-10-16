@@ -14,7 +14,7 @@ class DetailViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Detail"
+        title = car.name
         imageViewDetail.image = UIImage(named: car!.photo)
         
     }

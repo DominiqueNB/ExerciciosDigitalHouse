@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_15_CidadeEstadoPais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cqa-o3-UpM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MnI-7i-gl1"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="emq-ak-FdV">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="76" id="3mE-Hy-r6r" customClass="CityCell" customModule="_0_15_CidadeEstadoPais" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mE-Hy-r6r" id="WAX-ht-cwh" customClass="CityCell" customModule="_0_15_CidadeEstadoPais" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSB-NV-Qqr">
+                                                    <rect key="frame" x="20" y="11" width="374" height="54"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uSB-NV-Qqr" firstAttribute="top" secondItem="WAX-ht-cwh" secondAttribute="topMargin" id="D9A-4j-MXJ"/>
+                                                <constraint firstItem="uSB-NV-Qqr" firstAttribute="bottom" secondItem="WAX-ht-cwh" secondAttribute="bottomMargin" id="IGd-bx-Kzx"/>
+                                                <constraint firstItem="uSB-NV-Qqr" firstAttribute="trailing" secondItem="WAX-ht-cwh" secondAttribute="trailingMargin" id="Wlt-59-yu4"/>
+                                                <constraint firstItem="uSB-NV-Qqr" firstAttribute="leading" secondItem="WAX-ht-cwh" secondAttribute="leadingMargin" id="dqI-zN-W9r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityCell" destination="WAX-ht-cwh" id="Svo-LQ-bMY"/>
+                                            <outlet property="labelCity" destination="uSB-NV-Qqr" id="AqO-3g-13N"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="XGJ-Qg-zGj"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aSd-r9-smC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="emq-ak-FdV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0sb-U6-EOr"/>
+                            <constraint firstItem="emq-ak-FdV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4l1-lT-vPg"/>
+                            <constraint firstItem="cqa-o3-UpM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XAO-Ku-o9A"/>
+                            <constraint firstItem="emq-ak-FdV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a33-XL-D5R"/>
+                            <constraint firstItem="cqa-o3-UpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aYR-bZ-aeI"/>
+                            <constraint firstItem="cqa-o3-UpM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lSp-Eu-hwe"/>
+                            <constraint firstItem="emq-ak-FdV" firstAttribute="top" secondItem="cqa-o3-UpM" secondAttribute="bottom" id="xJp-fj-C8R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="cqa-o3-UpM" id="djY-yC-6Jk"/>
+                        <outlet property="tableViewCidades" destination="emq-ak-FdV" id="jik-Z9-fQb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
