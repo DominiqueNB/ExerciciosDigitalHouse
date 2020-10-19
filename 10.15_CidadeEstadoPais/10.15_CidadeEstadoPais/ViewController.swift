@@ -12,13 +12,17 @@ class ViewController: UIViewController {
     var arrayCidades = [Cidade]()
     var currentCityArray = [Cidade]()
     
-    @IBOutlet var tableViewCidades: UITableView!
     @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var tableViewCidades: UITableView!
+    @IBOutlet var pickerView: UIPickerView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewCidades.delegate = self
         tableViewCidades.dataSource = self
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
         arrayCidades.append(Cidade(name: "São Paulo", estado: "SP", pais: "Brasil"))
         arrayCidades.append(Cidade(name: "Miami", estado: "Florida", pais: "United States"))
@@ -66,4 +70,29 @@ extension ViewController: UISearchBarDelegate {
             })
         tableViewCidades.reloadData()
     }
+}
+
+extension ViewController: UIPickerViewDelegate {
+    
+}
+
+extension ViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 2
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if component == 0 {
+            return 0
+        }
+        
+        if component == 1 {
+            return 0
+        }
+        else {
+            return 0
+        }
+    }
+    
+    
 }

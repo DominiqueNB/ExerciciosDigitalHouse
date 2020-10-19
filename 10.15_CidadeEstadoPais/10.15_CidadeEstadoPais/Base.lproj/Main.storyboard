@@ -24,7 +24,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="emq-ak-FdV">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="316" width="414" height="546"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="76" id="3mE-Hy-r6r" customClass="CityCell" customModule="_0_15_CidadeEstadoPais" customModuleProvider="target">
@@ -59,17 +59,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="aSd-r9-smC"/>
                                 </connections>
                             </tableView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgT-D0-SHc">
+                                <rect key="frame" x="0.0" y="100" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="emq-ak-FdV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0sb-U6-EOr"/>
                             <constraint firstItem="emq-ak-FdV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4l1-lT-vPg"/>
+                            <constraint firstItem="emq-ak-FdV" firstAttribute="top" secondItem="QgT-D0-SHc" secondAttribute="bottom" id="QM4-9w-YiZ"/>
                             <constraint firstItem="cqa-o3-UpM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XAO-Ku-o9A"/>
                             <constraint firstItem="emq-ak-FdV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a33-XL-D5R"/>
                             <constraint firstItem="cqa-o3-UpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aYR-bZ-aeI"/>
+                            <constraint firstItem="QgT-D0-SHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dxY-8D-mCn"/>
+                            <constraint firstItem="QgT-D0-SHc" firstAttribute="top" secondItem="cqa-o3-UpM" secondAttribute="bottom" id="gaZ-xB-tyd"/>
                             <constraint firstItem="cqa-o3-UpM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lSp-Eu-hwe"/>
-                            <constraint firstItem="emq-ak-FdV" firstAttribute="top" secondItem="cqa-o3-UpM" secondAttribute="bottom" id="xJp-fj-C8R"/>
+                            <constraint firstItem="QgT-D0-SHc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xz2-xx-qTJ"/>
                         </constraints>
                     </view>
                     <connections>

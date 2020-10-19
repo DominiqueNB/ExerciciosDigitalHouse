@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6_10_DesafioUIGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZJ-oP-lwK">
+                                <rect key="frame" x="180" y="89" width="54" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-uR-EjC">
+                                <rect key="frame" x="80" y="192" width="254" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-a1-ZRS">
+                                <rect key="frame" x="80" y="392" width="254" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBB-oq-gKS">
+                                <rect key="frame" x="80" y="603" width="254" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WBB-oq-gKS" secondAttribute="trailing" constant="80" id="1YR-ku-agI"/>
+                            <constraint firstItem="RZJ-oP-lwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="2zL-h5-DE4"/>
+                            <constraint firstItem="RZJ-oP-lwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="9aX-B1-Qts"/>
+                            <constraint firstItem="gDc-uR-EjC" firstAttribute="top" secondItem="RZJ-oP-lwK" secondAttribute="bottom" constant="79" id="BfM-dp-Cob"/>
+                            <constraint firstItem="M8D-a1-ZRS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="392" id="D73-wC-e9J"/>
+                            <constraint firstAttribute="bottom" secondItem="M8D-a1-ZRS" secondAttribute="bottom" constant="376" id="DgD-EX-C7u"/>
+                            <constraint firstItem="gDc-uR-EjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="GPO-qA-935"/>
+                            <constraint firstItem="M8D-a1-ZRS" firstAttribute="top" secondItem="gDc-uR-EjC" secondAttribute="bottom" constant="72" id="Nbm-a8-P86"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WBB-oq-gKS" secondAttribute="bottom" constant="131" id="U4v-Om-edb"/>
+                            <constraint firstItem="M8D-a1-ZRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="bld-6Y-Q4t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZJ-oP-lwK" secondAttribute="trailing" constant="180" id="d3C-2b-Q7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8D-a1-ZRS" secondAttribute="trailing" constant="80" id="fB8-PU-c79"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gDc-uR-EjC" secondAttribute="trailing" constant="80" id="jv8-on-vYy"/>
+                            <constraint firstItem="WBB-oq-gKS" firstAttribute="top" secondItem="M8D-a1-ZRS" secondAttribute="bottom" constant="83" id="lk2-H6-NOk"/>
+                            <constraint firstItem="WBB-oq-gKS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="wi9-aX-7dO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="WBB-oq-gKS" id="W8Z-q6-GMF"/>
+                        <outlet property="greenView" destination="gDc-uR-EjC" id="ndy-gb-qAA"/>
+                        <outlet property="labelSum" destination="RZJ-oP-lwK" id="BrQ-ih-3q2"/>
+                        <outlet property="redView" destination="M8D-a1-ZRS" id="Cwm-26-f29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
