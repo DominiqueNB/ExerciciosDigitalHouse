@@ -9,12 +9,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+//    typealias onComplete = ((_ email: String, _ senha: String ) -> Void)?
     
     @IBOutlet var textFieldEmail: UITextField!
     @IBOutlet var textFieldSenha: UITextField!
     
     var onComplete: ((_ email: String, _ senha: String ) -> Void)?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
