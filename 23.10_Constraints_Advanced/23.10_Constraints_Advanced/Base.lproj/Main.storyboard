@@ -152,6 +152,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonConfirmar" destination="zcN-Iv-ZzQ" id="CWx-q0-PXj"/>
+                        <outlet property="buttonExcluir" destination="eqp-Ed-aN4" id="XSU-bq-0TT"/>
                         <outlet property="tableViewList" destination="65b-XH-5GZ" id="qEu-Pg-sna"/>
                     </connections>
                 </viewController>

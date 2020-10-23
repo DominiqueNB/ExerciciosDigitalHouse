@@ -10,11 +10,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var tableViewList: UITableView?
+    @IBOutlet var buttonConfirmar: UIButton?
+    @IBOutlet var buttonExcluir: UIButton?
     
     var arrayList = [Video]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buttonConfirmar!.layer.cornerRadius = 10
+        buttonExcluir!.layer.cornerRadius = 10
         
         tableViewList?.delegate = self
         tableViewList?.dataSource = self
