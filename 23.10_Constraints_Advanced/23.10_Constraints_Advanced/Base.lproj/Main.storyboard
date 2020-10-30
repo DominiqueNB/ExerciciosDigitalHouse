@@ -111,6 +111,7 @@
                                             <constraint firstAttribute="height" constant="50" id="djf-OW-Hnl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="17" maxX="0.0" maxY="17"/>
                                         <state key="normal" title="Confirmar">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
