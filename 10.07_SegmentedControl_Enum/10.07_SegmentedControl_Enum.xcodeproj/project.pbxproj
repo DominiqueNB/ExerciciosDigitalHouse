@@ -16,12 +16,12 @@
 		335B409D252E4ABB009F83C1 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B409C252E4ABB009F83C1 /* Pessoa.swift */; };
 		335B40A0252E4AF2009F83C1 /* Programador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B409F252E4AF2009F83C1 /* Programador.swift */; };
 		335B40A4252E4E2A009F83C1 /* PessoaProgramadorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B40A3252E4E2A009F83C1 /* PessoaProgramadorCell.swift */; };
-		335B40A7252E59E0009F83C1 /* programador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335B40A6252E59E0009F83C1 /* programador.jpg */; };
-		335B40AA252E59E9009F83C1 /* pessoa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335B40A9252E59E9009F83C1 /* pessoa.jpg */; };
 		335B40AF252E650B009F83C1 /* PessoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B40AE252E650B009F83C1 /* PessoaViewController.swift */; };
 		335B40B3252E6520009F83C1 /* PessoaView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B40B2252E6520009F83C1 /* PessoaView.storyboard */; };
 		335B40B6252E6548009F83C1 /* ProgramadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335B40B5252E6548009F83C1 /* ProgramadorViewController.swift */; };
 		335B40B9252E6559009F83C1 /* ProgramadorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335B40B8252E6559009F83C1 /* ProgramadorView.storyboard */; };
+		337DCAD5255197B800DEE701 /* pessoa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335B40A9252E59E9009F83C1 /* pessoa.jpg */; };
+		337DCAD8255197C000DEE701 /* programador.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335B40A6252E59E0009F83C1 /* programador.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +42,7 @@
 		335B40B2252E6520009F83C1 /* PessoaView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PessoaView.storyboard; sourceTree = "<group>"; };
 		335B40B5252E6548009F83C1 /* ProgramadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramadorViewController.swift; sourceTree = "<group>"; };
 		335B40B8252E6559009F83C1 /* ProgramadorView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProgramadorView.storyboard; sourceTree = "<group>"; };
+		337DCADB2551985400DEE701 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,12 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				335B40B3252E6520009F83C1 /* PessoaView.storyboard in Resources */,
-				335B40A7252E59E0009F83C1 /* programador.jpg in Resources */,
 				335B4094252E48F3009F83C1 /* LaunchScreen.storyboard in Resources */,
 				335B4091252E48F3009F83C1 /* Assets.xcassets in Resources */,
+				337DCAD5255197B800DEE701 /* pessoa.jpg in Resources */,
 				335B408F252E48F3009F83C1 /* Main.storyboard in Resources */,
 				335B40B9252E6559009F83C1 /* ProgramadorView.storyboard in Resources */,
-				335B40AA252E59E9009F83C1 /* pessoa.jpg in Resources */,
+				337DCAD8255197C000DEE701 /* programador.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +203,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				335B408E252E48F3009F83C1 /* Base */,
+				337DCADB2551985400DEE701 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

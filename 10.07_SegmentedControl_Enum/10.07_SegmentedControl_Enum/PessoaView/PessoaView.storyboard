@@ -41,6 +41,9 @@
                             <constraint firstItem="tlW-w6-lz1" firstAttribute="top" secondItem="pwi-Jk-nLc" secondAttribute="top" constant="65" id="uEF-Af-Ccw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelName" destination="XbN-Mw-bhR" id="xpV-6X-Cam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YE2-tk-pe1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

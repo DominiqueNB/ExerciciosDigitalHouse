@@ -9,11 +9,15 @@ import UIKit
 
 class PessoaViewController: UIViewController {
 
+    @IBOutlet var labelName: UILabel!
+    
     @IBAction func actionClose(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    
+    func setUpLabel(person: Pessoa) {
+        labelName.text = person.name
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
