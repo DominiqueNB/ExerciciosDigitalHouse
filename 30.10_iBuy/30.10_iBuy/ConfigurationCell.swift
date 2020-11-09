@@ -13,8 +13,8 @@ class ConfigurationCell: UITableViewCell {
         : UILabel!
     
     
-    func setupLabel(name: String) {
-        ConfigurationLabel.text = name
+    func setupLabel(name: Configuration) {
+        ConfigurationLabel.text = name.nameLabel
     }
     
     override func awakeFromNib() {

@@ -17,6 +17,7 @@
 		33251009254C47AB00762EBE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33251008254C47AB00762EBE /* ItemCell.swift */; };
 		3325100C254C49EC00762EBE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325100B254C49EC00762EBE /* ViewController2.swift */; };
 		3325100F254C5BF800762EBE /* ConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325100E254C5BF800762EBE /* ConfigurationCell.swift */; };
+		337DCB042552EEBE00DEE701 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337DCB032552EEBE00DEE701 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		33251008254C47AB00762EBE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		3325100B254C49EC00762EBE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		3325100E254C5BF800762EBE /* ConfigurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationCell.swift; sourceTree = "<group>"; };
+		337DCB032552EEBE00DEE701 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				33251004254C3FE500762EBE /* Model */,
 				33250FF5254C323300762EBE /* Main.storyboard */,
 				3325100E254C5BF800762EBE /* ConfigurationCell.swift */,
+				337DCB032552EEBE00DEE701 /* Configuration.swift */,
 				3325100B254C49EC00762EBE /* ViewController2.swift */,
 				33250FF8254C323600762EBE /* Assets.xcassets */,
 				33250FFA254C323600762EBE /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 				33250FF2254C323300762EBE /* SceneDelegate.swift in Sources */,
 				33251006254C3FF900762EBE /* Model.swift in Sources */,
 				33251009254C47AB00762EBE /* ItemCell.swift in Sources */,
+				337DCB042552EEBE00DEE701 /* Configuration.swift in Sources */,
 				3325100C254C49EC00762EBE /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
