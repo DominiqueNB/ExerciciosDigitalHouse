@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B68C7249-2D19-47DA-8EFD-09F534DC311E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50FB9DDF-B311-49C0-AA07-2B82129E7F68"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "11.11_Network_CoinConversion/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadData(type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04E589C3-9B81-4CA5-A61F-B29396A0A218"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "11.11_Network_CoinConversion/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "loadData(type:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "04E589C3-9B81-4CA5-A61F-B29396A0A218 - 5df1e5f475b5adce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_1_11_Network_CoinConversion.ViewController.loadData() -&gt; ()"
+                  moduleName = "11.11_Network_CoinConversion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominiquenb/dev/ExerciciosDigitalHouse/11.11_Network_CoinConversion/11.11_Network_CoinConversion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "04E589C3-9B81-4CA5-A61F-B29396A0A218 - e783c9d61eb59ad9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in _1_11_Network_CoinConversion.ViewController.loadData() -&gt; ()"
+                  moduleName = "11.11_Network_CoinConversion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dominiquenb/dev/ExerciciosDigitalHouse/11.11_Network_CoinConversion/11.11_Network_CoinConversion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
