@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelValue: UILabel!
     @IBOutlet weak var labelCurrency: UILabel!
     @IBOutlet var buttonBaseCurrency: UIButton!
-    @IBOutlet var buttonConversionCurrency: UIButton!
     @IBOutlet var buttonConvert: UIButton!
     
     func loadData(type: CurrencyType) {
@@ -63,15 +62,15 @@ class ViewController: UIViewController {
     
     func actionSheetSelectCurrency() {
         let alert = UIAlertController(title: "Atenção",
-                                      message: "Selecione a moeda base",
+                                      message: "Selecione a opção de conversão",
                                       preferredStyle: .alert)
         
         
-        alert.addAction(UIAlertAction(title: "BRL - Real", style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "De BRL - Real para USD - Dólar", style: .default, handler: { (action) in
             self.selectedCurrency = CurrencyType.BRL
         }))
         
-        alert.addAction(UIAlertAction(title: "USD - Dólar Americano", style: .default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "De USD - Dólar para BRL - Real", style: .default, handler: { (action) in
             self.selectedCurrency = CurrencyType.USD
         }))
         
@@ -91,7 +90,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textField.delegate = self
         buttonBaseCurrency!.layer.cornerRadius = 10
-        buttonConversionCurrency!.layer.cornerRadius = 10
         buttonConvert!.layer.cornerRadius = 10
     }
     

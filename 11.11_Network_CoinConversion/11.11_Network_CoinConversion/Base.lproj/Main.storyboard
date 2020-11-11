@@ -54,26 +54,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eee-45-Sdp">
-                                <rect key="frame" x="219" y="321" width="150" height="45"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Gbx-1h-2S2"/>
-                                    <constraint firstAttribute="height" constant="45" id="f2q-JV-Mep"/>
-                                </constraints>
-                                <state key="normal" title="Moeda Conversão"/>
-                                <connections>
-                                    <action selector="buttonConversionCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jz-s7-Xd1"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clu-3D-j66">
-                                <rect key="frame" x="45" y="321" width="150" height="45"/>
+                                <rect key="frame" x="100" y="321" width="214" height="45"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="5nn-yN-gaS"/>
-                                    <constraint firstAttribute="width" constant="150" id="tym-OI-whZ"/>
+                                    <constraint firstAttribute="width" constant="214" id="FJa-Jq-92g"/>
                                 </constraints>
-                                <state key="normal" title="Moeda Base"/>
+                                <state key="normal" title="Selecionar Conversão"/>
                                 <connections>
                                     <action selector="buttonBaseCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67a-Xq-EkO"/>
                                 </connections>
@@ -82,25 +70,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eee-45-Sdp" firstAttribute="top" secondItem="bU8-6q-cFc" secondAttribute="bottom" constant="62" id="4KD-Rr-fhh"/>
                             <constraint firstItem="c3A-rP-8e9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="8Nt-te-4BL"/>
                             <constraint firstItem="Clu-3D-j66" firstAttribute="top" secondItem="bU8-6q-cFc" secondAttribute="bottom" constant="62" id="CYg-bF-mj4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c3A-rP-8e9" secondAttribute="trailing" constant="80" id="Di9-21-heI"/>
-                            <constraint firstItem="eee-45-Sdp" firstAttribute="top" secondItem="bU8-6q-cFc" secondAttribute="bottom" constant="62" id="Gq5-ig-HCR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bU8-6q-cFc" secondAttribute="trailing" constant="70" id="KBb-On-7j5"/>
                             <constraint firstItem="bU8-6q-cFc" firstAttribute="top" secondItem="c3A-rP-8e9" secondAttribute="bottom" constant="80" id="M5d-hD-BbE"/>
                             <constraint firstItem="c3A-rP-8e9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="QmS-aQ-2DK"/>
                             <constraint firstItem="bU8-6q-cFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="RB6-R8-8gP"/>
-                            <constraint firstItem="Clu-3D-j66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Rsl-gq-1tV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eee-45-Sdp" secondAttribute="trailing" constant="45" id="bOm-j5-kje"/>
                             <constraint firstItem="qjo-3s-6ID" firstAttribute="leading" secondItem="Tcv-bo-i4j" secondAttribute="trailing" constant="34" id="gMD-mh-9Bo"/>
                             <constraint firstItem="qjo-3s-6ID" firstAttribute="top" secondItem="Qff-b5-Ogl" secondAttribute="bottom" constant="73" id="gki-kM-vR2"/>
-                            <constraint firstItem="Clu-3D-j66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="kMm-DZ-4zt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qff-b5-Ogl" secondAttribute="trailing" constant="100" id="l2a-lH-Boe"/>
+                            <constraint firstItem="Clu-3D-j66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="lNA-Ey-ZGT"/>
                             <constraint firstItem="Tcv-bo-i4j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="nvB-VL-GhR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qjo-3s-6ID" secondAttribute="bottom" constant="289" id="oq6-SF-Cva"/>
-                            <constraint firstItem="eee-45-Sdp" firstAttribute="leading" secondItem="Clu-3D-j66" secondAttribute="trailing" constant="24" id="rRN-e0-DIT"/>
-                            <constraint firstItem="Qff-b5-Ogl" firstAttribute="top" secondItem="eee-45-Sdp" secondAttribute="bottom" constant="59" id="sYM-ii-1tl"/>
+                            <constraint firstItem="Qff-b5-Ogl" firstAttribute="top" secondItem="Clu-3D-j66" secondAttribute="bottom" constant="59" id="s4E-Ia-5z0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Clu-3D-j66" secondAttribute="trailing" constant="100" id="s4b-qs-deb"/>
                             <constraint firstItem="Clu-3D-j66" firstAttribute="top" secondItem="bU8-6q-cFc" secondAttribute="bottom" constant="62" id="t8Q-qc-eGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tcv-bo-i4j" secondAttribute="bottom" constant="289" id="wyk-PC-uwZ"/>
                             <constraint firstItem="Qff-b5-Ogl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="y7D-BO-JoJ"/>
@@ -108,7 +92,6 @@
                     </view>
                     <connections>
                         <outlet property="buttonBaseCurrency" destination="Clu-3D-j66" id="HEM-ns-8BR"/>
-                        <outlet property="buttonConversionCurrency" destination="eee-45-Sdp" id="iPw-Lj-RVb"/>
                         <outlet property="buttonConvert" destination="Qff-b5-Ogl" id="bti-zq-dbb"/>
                         <outlet property="labelCurrency" destination="Tcv-bo-i4j" id="I3r-RD-Rsj"/>
                         <outlet property="labelValue" destination="qjo-3s-6ID" id="5hL-AH-Jwd"/>
