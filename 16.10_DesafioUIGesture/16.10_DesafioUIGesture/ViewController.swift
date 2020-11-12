@@ -22,11 +22,13 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap))
         greenView.addGestureRecognizer(tap)
         
-        let swipe = UITapGestureRecognizer(target: self, action: #selector(self.handleSwipe))
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipe))
+        swipe.direction = .left
         redView.addGestureRecognizer(swipe)
         
         
-        let long = UITapGestureRecognizer(target: self, action: #selector(self.handleLong))
+        let long = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLong))
+        
         blueView.addGestureRecognizer(long)
     }
 

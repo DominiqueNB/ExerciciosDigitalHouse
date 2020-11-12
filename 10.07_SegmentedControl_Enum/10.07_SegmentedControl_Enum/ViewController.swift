@@ -71,7 +71,7 @@ extension ViewController: UITableViewDelegate {
         case PersonOptions.pessoa:
             if let viewDetail = UIStoryboard(name: "PessoaView", bundle: nil).instantiateInitialViewController() as? PessoaViewController {
                 present(viewDetail, animated: true, completion: nil)
-                viewDetail.setUpLabel(person: Pessoa)
+                viewDetail.setUpLabel(person: arrayPessoa[indexPath.row])
             }
         case PersonOptions.programador:
             if let viewDetail = UIStoryboard(name: "ProgramadorView", bundle: nil).instantiateInitialViewController() as? ProgramadorViewController {

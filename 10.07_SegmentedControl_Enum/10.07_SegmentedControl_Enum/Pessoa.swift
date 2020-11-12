@@ -13,7 +13,7 @@ class Pessoa {
     
     init(name: String, photo: String) {
         self.name = name
-        self.photo = name
+        self.photo = photo
     }
     
 }
