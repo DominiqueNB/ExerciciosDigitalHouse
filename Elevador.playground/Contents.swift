@@ -40,9 +40,22 @@ class Elevador {
         self.presentes = 0
     }
     
-    func entra(quantidade: Int, pessoa: Pessoa) {
-        if capacidade - presentes >= capacidade && quantidade <= capacidade {
+    func calculaNumeroDePessoas(pessoa: Pessoa) -> Int {
+        var quantidade = 0
+        if pessoa.temPreferencia {
+            return 1
+        }
+        if pessoa.necessitaAcompanhante {
+            quantidade += 2
+        }
+    }
+    
+    func entra(pessoa: Pessoa) {
+        if quantidade <= capacidade {
             presentes = quantidade + presentes
+        } else {
+            var diferenca = presentes - capacidade
+            quantidade += diferenca
         }
     }
     
@@ -64,6 +77,7 @@ class Elevador {
         }
     }
 }
+
 var thissenkrup = Elevador(andarAtual: 0, totalDeAndares: 12, capacidade: 8, presentes: 0)
-thissenkrup.entra(quantidade: 8)
+thissenkrup.entra(arrayFila: arrayFila)
 print(thissenkrup.presentes)

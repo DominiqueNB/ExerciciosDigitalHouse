@@ -1,0 +1,6 @@
+framework module Pods_13_11_API_TVShows {
+  umbrella header "Pods-13.11_API-TVShows-umbrella.h"
+
+  export *
+  module * { export * }
+}
