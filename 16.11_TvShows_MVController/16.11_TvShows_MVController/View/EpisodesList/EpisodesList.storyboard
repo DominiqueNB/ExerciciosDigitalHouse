@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xok-ve-80z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Episodes List View Controller-->
+        <scene sceneID="BDc-3U-4E6">
+            <objects>
+                <viewController id="Xok-ve-80z" customClass="EpisodesListViewController" customModule="_6_11_TvShows_MVController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gIs-eJ-INb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QKb-1D-W5H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yi-CK-Pnk">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EpisodesCell" id="qGk-4j-xD8" customClass="EpisodesCell" customModule="_6_11_TvShows_MVController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qGk-4j-xD8" id="bzb-mp-X4w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EpisodesName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUj-Lg-Pgn">
+                                                    <rect key="frame" x="20" y="11" width="354" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TUj-Lg-Pgn" secondAttribute="trailing" constant="20" id="7AK-Mo-5VW"/>
+                                                <constraint firstItem="TUj-Lg-Pgn" firstAttribute="top" secondItem="bzb-mp-X4w" secondAttribute="topMargin" id="9uj-IG-7Ur"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TUj-Lg-Pgn" secondAttribute="bottom" id="nCz-a2-a33"/>
+                                                <constraint firstItem="TUj-Lg-Pgn" firstAttribute="leading" secondItem="bzb-mp-X4w" secondAttribute="leadingMargin" id="r8N-Fj-N6w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelEpisode" destination="TUj-Lg-Pgn" id="sMV-4M-Vtp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="trm-Ez-pzB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QKb-1D-W5H" firstAttribute="trailing" secondItem="trm-Ez-pzB" secondAttribute="trailing" id="4lf-5v-Vvw"/>
+                            <constraint firstItem="9yi-CK-Pnk" firstAttribute="leading" secondItem="trm-Ez-pzB" secondAttribute="leading" id="LD5-HN-iDj"/>
+                            <constraint firstItem="9yi-CK-Pnk" firstAttribute="trailing" secondItem="trm-Ez-pzB" secondAttribute="trailing" id="NZ7-S8-7v7"/>
+                            <constraint firstItem="QKb-1D-W5H" firstAttribute="top" secondItem="trm-Ez-pzB" secondAttribute="top" id="atS-bx-xa8"/>
+                            <constraint firstItem="9yi-CK-Pnk" firstAttribute="bottom" secondItem="trm-Ez-pzB" secondAttribute="bottom" id="clf-LQ-fcd"/>
+                            <constraint firstItem="QKb-1D-W5H" firstAttribute="leading" secondItem="trm-Ez-pzB" secondAttribute="leading" id="f6L-yp-3MY"/>
+                            <constraint firstItem="9yi-CK-Pnk" firstAttribute="top" secondItem="QKb-1D-W5H" secondAttribute="bottom" id="znB-aU-Gva"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewEpisode" destination="9yi-CK-Pnk" id="Gmh-qB-hBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGK-Z2-crk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

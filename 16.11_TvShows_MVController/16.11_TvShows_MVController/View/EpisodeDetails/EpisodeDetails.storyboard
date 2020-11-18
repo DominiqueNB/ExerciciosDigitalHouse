@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nLN-Up-cXm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Episode Details View Controller-->
+        <scene sceneID="O1c-BH-5o7">
+            <objects>
+                <viewController id="nLN-Up-cXm" customClass="EpisodeDetailsViewController" customModule="_6_11_TvShows_MVController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yb-EG-JbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EpisodesName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2F-o6-qR9">
+                                <rect key="frame" x="82" y="74" width="250" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="cIk-GK-sBi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIF-Wd-a5F">
+                                <rect key="frame" x="82" y="163" width="250" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="205" id="chy-nk-SUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvs-ty-HMS">
+                                <rect key="frame" x="120" y="438" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w8e-02-I4Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w8e-02-I4Z" firstAttribute="trailing" secondItem="T2F-o6-qR9" secondAttribute="trailing" constant="82" id="7ep-t8-do9"/>
+                            <constraint firstItem="WIF-Wd-a5F" firstAttribute="top" secondItem="T2F-o6-qR9" secondAttribute="bottom" constant="20" id="JwT-DF-6i9"/>
+                            <constraint firstItem="kvs-ty-HMS" firstAttribute="leading" secondItem="w8e-02-I4Z" secondAttribute="leading" constant="120" id="VFM-SU-XFZ"/>
+                            <constraint firstItem="kvs-ty-HMS" firstAttribute="top" secondItem="WIF-Wd-a5F" secondAttribute="bottom" constant="70" id="X1p-8w-rR7"/>
+                            <constraint firstItem="w8e-02-I4Z" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="kvs-ty-HMS" secondAttribute="bottom" constant="403" id="ZwZ-AC-nZn"/>
+                            <constraint firstItem="WIF-Wd-a5F" firstAttribute="leading" secondItem="w8e-02-I4Z" secondAttribute="leading" constant="82" id="bZ2-04-ks7"/>
+                            <constraint firstItem="T2F-o6-qR9" firstAttribute="top" secondItem="w8e-02-I4Z" secondAttribute="top" constant="30" id="cZD-Ew-W3a"/>
+                            <constraint firstItem="w8e-02-I4Z" firstAttribute="trailing" secondItem="WIF-Wd-a5F" secondAttribute="trailing" constant="82" id="j9G-cE-BhM"/>
+                            <constraint firstItem="w8e-02-I4Z" firstAttribute="trailing" secondItem="kvs-ty-HMS" secondAttribute="trailing" constant="120" id="rk1-FP-QZP"/>
+                            <constraint firstItem="T2F-o6-qR9" firstAttribute="leading" secondItem="w8e-02-I4Z" secondAttribute="leading" constant="82" id="zG6-Jb-XaW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelEpisodesDescription" destination="WIF-Wd-a5F" id="FQM-IF-fMz"/>
+                        <outlet property="labelEpisodesName" destination="T2F-o6-qR9" id="wGT-kN-sYf"/>
+                        <outlet property="labelEpisodesRating" destination="kvs-ty-HMS" id="ifN-k2-s8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ck0-ST-ko5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="28.794642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
