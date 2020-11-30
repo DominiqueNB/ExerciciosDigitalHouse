@@ -20,6 +20,7 @@ class SeasonsController {
         if let tvShow = show {
             AF.request("http://api.tvmaze.com/shows/\(tvShow.id!)/seasons").responseJSON  { response in
 //                print(response)
+                
                 if let arrayDictionary = response.value as? [[String: Any]] {
                     var arraySeasons = [Season]()
                     for dictionary in arrayDictionary {

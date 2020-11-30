@@ -1,0 +1,58 @@
+//
+//  ModelYear.swift
+//  20.11_MVCAdvanced
+//
+//  Created by Dominique Nascimento Bezerra on 20/11/20.
+//
+
+import Foundation
+import UIKit
+import Alamofire
+
+class ModelYearController: ControllerProtocol {
+    var selectedBrand: Brand
+    var selectedModel: Model
+    
+    init(brand: Brand, model: Model) {
+        selectedBrand = brand
+        selectedModel = model
+    }
+    
+    var arrayYears = [ModelYear]()
+    
+    func loadData(onComplete: @escaping (Bool) -> Void) {
+        AF.request("https://parallelum.com.br/fipe/api/v1/carros/marcas/\(selectedBrand.id!)/modelos/\(selectedModel.id!)/anos").responseJSON { response in
+            if let json = response.value as? [[String: Any]]{
+//                print(response)
+                var years = [ModelYear]()
+                for item in json {
+                    years.append(ModelYear(fromDictionary: item))
+                }
+                self.arrayYears = years
+                onComplete(true)
+                return
+            }
+            onComplete(false)
+        }
+        
+    }
+    
+    func getNumberOfRows() -> Int {
+        return arrayYears.count
+    }
+    
+    func getNextController(index: Int) -> UIViewController {
+        let nextController =  CarController(brand: selectedBrand, model: selectedModel, year: arrayYears[index])
+        return ViewController.getView(controller: nextController)
+    }
+    
+    func getTitleForCell(at index: Int) -> String {
+        return arrayYears[index].name
+    }
+    
+    func getViewTitle() -> String {
+        return "Ano - \(selectedModel.name!)"
+    }
+    
+    
+}
