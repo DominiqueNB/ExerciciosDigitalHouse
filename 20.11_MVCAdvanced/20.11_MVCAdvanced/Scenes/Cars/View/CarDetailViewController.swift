@@ -9,12 +9,13 @@ import UIKit
 
 class CarDetailViewController: UIViewController {
     
-    var controller = CarController()
-    var modelYear = Year()
-    var modelBrand = Brand()
-    var carModel = CarModels()
-    var car = Car()
+    var viewModel: CarViewModel?
     
+    class func getView(viewModel: CarViewModel) -> CarDetailViewController {
+        let viewDefault = UIStoryboard(name: "CarDetail", bundle: nil).instantiateInitialViewController() as! CarDetailViewController
+        viewDefault.viewModel = viewModel
+        return viewDefault
+    }
     
     @IBOutlet weak var labelCarName: UILabel!
     @IBOutlet weak var labelCarYear: UILabel!
@@ -38,11 +39,13 @@ class CarDetailViewController: UIViewController {
 //
 //            }
 //        }
-        
-        controller.loadData(brand: modelBrand, models: carModel, year: modelYear, onLoadData: { (car) in
-            self.setComponents(car: car)
-            
-        })
+        if let viewModel = viewModel {
+            viewModel.loadData(onComplete: { (succes) in
+                if let car = viewModel.car {
+                    self.setComponents(car: car)
+                }
+            })
+        }
     }
         
     }

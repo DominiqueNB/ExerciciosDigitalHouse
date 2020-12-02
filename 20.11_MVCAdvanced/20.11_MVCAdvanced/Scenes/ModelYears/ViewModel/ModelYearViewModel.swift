@@ -1,15 +1,17 @@
 //
-//  ModelYear.swift
+//  ModelYearViewModel.swift
 //  20.11_MVCAdvanced
 //
-//  Created by Dominique Nascimento Bezerra on 20/11/20.
+//  Created by Dominique Nascimento Bezerra on 30/11/20.
 //
 
 import Foundation
-import UIKit
 import Alamofire
 
-class ModelYearController: ControllerProtocol {
+class ModelYearViewModel: ViewModelProtocol {
+    
+    var apiManager = APIManager()
+    
     var selectedBrand: Brand
     var selectedModel: Model
     
@@ -21,11 +23,10 @@ class ModelYearController: ControllerProtocol {
     var arrayYears = [ModelYear]()
     
     func loadData(onComplete: @escaping (Bool) -> Void) {
-        AF.request("https://parallelum.com.br/fipe/api/v1/carros/marcas/\(selectedBrand.id!)/modelos/\(selectedModel.id!)/anos").responseJSON { response in
-            if let json = response.value as? [[String: Any]]{
-//                print(response)
+        apiManager.request(url: "https://parallelum.com.br/fipe/api/v1/carros/marcas/\(selectedBrand.id!)/modelos/\(selectedModel.id!)/anos") { (json, jsonArray, string) in
+            if let jsonYears = jsonArray {
                 var years = [ModelYear]()
-                for item in json {
+                for item in jsonYears {
                     years.append(ModelYear(fromDictionary: item))
                 }
                 self.arrayYears = years
@@ -34,7 +35,6 @@ class ModelYearController: ControllerProtocol {
             }
             onComplete(false)
         }
-        
     }
     
     func getNumberOfRows() -> Int {
@@ -42,8 +42,11 @@ class ModelYearController: ControllerProtocol {
     }
     
     func getNextController(index: Int) -> UIViewController {
-        let nextController =  CarController(brand: selectedBrand, model: selectedModel, year: arrayYears[index])
-        return ViewController.getView(controller: nextController)
+        let nextController =  CarViewModel(brand: selectedBrand, model: selectedModel, year: arrayYears[index])
+        nextController.selectedBrand = selectedBrand
+        nextController.selectedModel = selectedModel
+        nextController.selectedYear = arrayYears[index]
+        return CarDetailViewController.getView(viewModel: nextController)
     }
     
     func getTitleForCell(at index: Int) -> String {
@@ -53,6 +56,4 @@ class ModelYearController: ControllerProtocol {
     func getViewTitle() -> String {
         return "Ano - \(selectedModel.name!)"
     }
-    
-    
 }

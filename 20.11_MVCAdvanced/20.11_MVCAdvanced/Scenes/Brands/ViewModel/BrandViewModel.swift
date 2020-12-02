@@ -1,21 +1,25 @@
 //
-//  BrandController.swift
+//  BrandViewModel.swift
 //  20.11_MVCAdvanced
 //
-//  Created by Dominique Nascimento Bezerra on 20/11/20.
+//  Created by Dominique Nascimento Bezerra on 30/11/20.
 //
 
 import Foundation
 import Alamofire
 
-class BrandController: ControllerProtocol {
+class BrandViewModel:  ViewModelProtocol {
+    
     var arrayBrands = [Brand]()
+    var apiManager = APIManager()
+    
+//    func url
     
     func loadData(onComplete: @escaping (Bool) -> Void) {
-        AF.request("https://parallelum.com.br/fipe/api/v1/carros/marcas").responseJSON { response in
-            if let json = response.value as? [[String:Any]] {
+        apiManager.request(url: "https://parallelum.com.br/fipe/api/v1/carros/marcas") { (json, jsonArray, string) in
+            if let jsonArray = jsonArray {
                 var brands = [Brand]()
-                for item in json {
+                for item in jsonArray {
                     brands.append(Brand(fromDictionary: item))
                 }
                 self.arrayBrands = brands
@@ -32,8 +36,8 @@ class BrandController: ControllerProtocol {
     }
     
     func getNextController(index: Int) -> UIViewController {
-        let controller = ModelController(brand: arrayBrands[index])
-        return ViewController.getView(controller: controller)
+        let controller = ModelsViewModel(brand: arrayBrands[index])
+        return ViewController.getView(viewModel: controller)
     }
     
     func getTitleForCell(at index: Int) -> String {
@@ -43,6 +47,4 @@ class BrandController: ControllerProtocol {
     func getViewTitle() -> String {
         return "Marcas"
     }
-    
-    
 }

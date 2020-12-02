@@ -1,21 +1,25 @@
 //
-//  Car.swift
+//  CarViewModel.swift
 //  20.11_MVCAdvanced
 //
-//  Created by Dominique Nascimento Bezerra on 20/11/20.
+//  Created by Dominique Nascimento Bezerra on 30/11/20.
 //
 
 import Foundation
 import Alamofire
-import UIKit
 
-class CarController: ControllerProtocol {
+class CarViewModel: ViewModelProtocol {
+    
     
     var selectedBrand: Brand
     var selectedModel: Model
     var selectedYear: ModelYear
     
     var car: Car?
+    
+//    init(){
+//        
+//    }
     
     init(brand: Brand, model: Model, year: ModelYear) {
         selectedBrand = brand
@@ -49,10 +53,10 @@ class CarController: ControllerProtocol {
         return arrayTexts.count
     }
 
-    func getNextController(index: Int) -> UIViewController {
-        let nextController = ModelController(brand: selectedBrand)
-        return ViewController.getView(controller: nextController)
-    }
+//    func getNextController(index: Int) -> UIViewController {
+//        let nextController = CarViewModel(brand: selectedBrand, model: selectedModel, year: selectedYear)
+//        return CarDetailViewController.getView(viewModel: nextController)
+//    }
 
     func getTitleForCell(at index: Int) -> String {
         return arrayTexts[index]
@@ -61,7 +65,4 @@ class CarController: ControllerProtocol {
     func getViewTitle() -> String {
         return "\(selectedYear.name!)"
     }
-
-
-
 }
