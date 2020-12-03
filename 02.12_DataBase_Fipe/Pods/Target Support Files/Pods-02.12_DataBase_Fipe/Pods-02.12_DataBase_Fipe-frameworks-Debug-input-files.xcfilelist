@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-02.12_DataBase_Fipe/Pods-02.12_DataBase_Fipe-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/NAMDatabase/NAMDatabase.framework

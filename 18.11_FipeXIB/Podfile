@@ -7,4 +7,5 @@ target '18.11_FipeXIB' do
 
   # Pods for 18.11_FipeXIB
 	pod 'Alamofire'
+	pod 'NAMDatabase'
 end
