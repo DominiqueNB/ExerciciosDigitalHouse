@@ -18,11 +18,11 @@ class ViewModel {
                 var brands = [Brand]()
                 for item in jsonArray {
                     var brand = Brand(fromDictionary: item)
-//                    if let brandResult = Brand.getObjectWithId(brand.id) as? Brand {
-//                        brands.append(brandResult)
-//                    } else {
+                    if let brandResult = Brand.getObjectWithId(brand.id) as? Brand {
+                        brands.append(brandResult)
+                    } else {
                         brands.append(brand)
-//                    }
+                    }
                 }
                 self.arrayBrands = brands
                 onComplete(true)

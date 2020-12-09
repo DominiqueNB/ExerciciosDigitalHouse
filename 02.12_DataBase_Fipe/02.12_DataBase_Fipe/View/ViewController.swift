@@ -39,11 +39,11 @@ extension ViewController: UITableViewDelegate {
         alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: {_ in
             print(self.viewModel.arrayBrands[indexPath.row].name)
             let brand = self.viewModel.arrayBrands[indexPath.row]
-            if let favorite = brand.isFavorite {
+            if brand.isFavorite == "true" {
                 print(brand)
             } else {
                 brand.identifier = brand.id
-                brand.isFavorite = true
+                brand.isFavorite = "true"
                 brand.saveData()
                 tableView.reloadData()
             }

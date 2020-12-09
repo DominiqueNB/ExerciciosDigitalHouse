@@ -48,10 +48,10 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
-                  offsetFromSymbolStart = "55">
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
-                  uuid = "507168AB-B8C6-4CD2-8BA5-A92864C52BA7 - eba38c8e6b7b6e65"
+                  uuid = "507168AB-B8C6-4CD2-8BA5-A92864C52BA7 - eba38c8e6b7b6fba"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -61,8 +61,8 @@
                   urlString = "file:///Users/dominiquenb/dev/ExerciciosDigitalHouse/20.11_MVCAdvanced/20.11_MVCAdvanced/View/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "93">
                </Location>
             </Locations>
@@ -225,6 +225,22 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "getNumberOfRows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9065A359-53E8-4405-A213-9799809631F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "20.11_MVCAdvanced/Scenes/Cars/View/CarDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "getView(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

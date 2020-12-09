@@ -14,7 +14,7 @@ class BrandCell: UITableViewCell {
     
     func setupCell(brand: Brand) {
         labelBrandName.text = brand.name
-        if brand.isFavorite == true {
+        if brand.isFavorite == "true" {
             labelBrandName.backgroundColor = UIColor.green
             myCell.backgroundColor = UIColor.green
         }

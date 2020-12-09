@@ -9,16 +9,20 @@ import Foundation
 import NAMDatabase
 
 class Brand: NAMObjectModel {
-    var id: String!
+    @objc var id: String!
     @objc var name: String!
-    var isFavorite: Bool?
+    @objc var isFavorite: String!
     
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
+    override init() {
+    }
+    
     init(fromDictionary dictionary: [String: Any]) {
         id = dictionary["codigo"] as? String
         name = dictionary["nome"] as? String
+        isFavorite = "false"
         
         if id == nil {
             if let intId = dictionary["codigo"] as? Int {

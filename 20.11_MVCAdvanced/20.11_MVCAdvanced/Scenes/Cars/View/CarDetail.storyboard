@@ -11,7 +11,7 @@
         <!--Car Detail View Controller-->
         <scene sceneID="9Lq-yG-ENm">
             <objects>
-                <viewController id="yX4-SC-4ST" customClass="CarDetailViewController" customModule="_8_11_FipeXIB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yX4-SC-4ST" customClass="CarDetailViewController" customModule="_0_11_MVCAdvanced" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQ9-jL-TQh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
