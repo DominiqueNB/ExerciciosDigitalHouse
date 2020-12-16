@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 window = UIWindow(windowScene: windowScene)
                 
                 // Seta a rootview, a primeira tela a ser exibida
-                let viewDefault = ViewController.getView(controller: BrandController())
+                let viewDefault = ViewController.getView(viewModel: BrandViewModel())
                 window?.rootViewController = UINavigationController(rootViewController: viewDefault)
                 window?.makeKeyAndVisible()
         

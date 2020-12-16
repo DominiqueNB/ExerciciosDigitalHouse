@@ -9,13 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var controller: ControllerProtocol!
+    var viewModel: ViewModelProtocol!
 
     @IBOutlet weak var tableViewList: UITableView!
     
-    class func getView(controller: ControllerProtocol) -> ViewController {
+    class func getView(viewModel: ViewModelProtocol) -> ViewController {
         let viewDefault = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! ViewController
-        viewDefault.controller = controller
+        viewDefault.viewModel = viewModel
         return viewDefault
     }
     
@@ -26,11 +26,11 @@ class ViewController: UIViewController {
         
         loadData()
         
-        title = controller.getViewTitle()
+        title = viewModel.getViewTitle()
     }
 
     func loadData() {
-        controller.loadData { success in
+        viewModel.loadData { success in
             self.tableViewList.reloadData()
         }
     }
@@ -39,20 +39,19 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let nextController = controller.getNextController(index: indexPath.row)
-        
+        let nextController = viewModel.getNextController!(index: indexPath.row)
         navigationController?.pushViewController(nextController, animated: true)
     }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return controller.getNumberOfRows()
+        return viewModel.getNumberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = controller.getTitleForCell(at: indexPath.row)
+        cell.textLabel?.text = viewModel.getTitleForCell(at: indexPath.row)
         return cell
     }
     

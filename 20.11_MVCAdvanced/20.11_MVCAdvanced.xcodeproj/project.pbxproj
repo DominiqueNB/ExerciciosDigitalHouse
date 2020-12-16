@@ -19,14 +19,19 @@
 		331DF55E2567ED03007D85DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF55D2567ED03007D85DC /* Model.swift */; };
 		331DF5612567ED19007D85DC /* ModelYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5602567ED19007D85DC /* ModelYear.swift */; };
 		331DF5642567ED54007D85DC /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5632567ED54007D85DC /* Car.swift */; };
-		331DF5672567ED71007D85DC /* BrandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5662567ED71007D85DC /* BrandController.swift */; };
-		331DF56A2567EDA8007D85DC /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5692567EDA8007D85DC /* ControllerProtocol.swift */; };
+		331DF56A2567EDA8007D85DC /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5692567EDA8007D85DC /* ViewModelProtocol.swift */; };
+		3362841E25753205000C0F12 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3362841D25753205000C0F12 /* APIManager.swift */; };
+		3362842825753736000C0F12 /* CarDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3362842425753736000C0F12 /* CarDetail.storyboard */; };
+		3362842A25753736000C0F12 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3362842625753736000C0F12 /* CarDetailViewController.swift */; };
+		3362843E25753FB1000C0F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5422567EAB7007D85DC /* ViewController.swift */; };
+		3362844225753FB1000C0F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331DF5422567EAB7007D85DC /* ViewController.swift */; };
 		336837D9256C00DF00FCF70C /* _0_11_MVCAdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336837D8256C00DF00FCF70C /* _0_11_MVCAdvancedTests.swift */; };
 		336837E3256C00E600FCF70C /* BrandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B22CE6256BFA4400DACBBA /* BrandTests.swift */; };
-		33A8A62B2567F0F200D2C0FC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8A62A2567F0F200D2C0FC /* ModelController.swift */; };
-		33A8A62E2567F10F00D2C0FC /* ModelYearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8A62D2567F10F00D2C0FC /* ModelYearController.swift */; };
-		33A8A6312567F12700D2C0FC /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8A6302567F12700D2C0FC /* CarController.swift */; };
 		33B22CDD256BF82C00DACBBA /* _0_11_MVCAdvancedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B22CDC256BF82C00DACBBA /* _0_11_MVCAdvancedUITests.swift */; };
+		33C38285257523790060F55A /* BrandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C38284257523790060F55A /* BrandViewModel.swift */; };
+		33C38296257527150060F55A /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C38295257527150060F55A /* ModelsViewModel.swift */; };
+		33C382A1257527A80060F55A /* ModelYearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C382A0257527A80060F55A /* ModelYearViewModel.swift */; };
+		33C382AC257528050060F55A /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C382AB257528050060F55A /* CarViewModel.swift */; };
 		39BFABD25C4FA6451DCA92AD /* Pods_20_11_MVCAdvanced.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B74F5B60E1D45A401A5AFE4 /* Pods_20_11_MVCAdvanced.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,18 +68,21 @@
 		331DF55D2567ED03007D85DC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		331DF5602567ED19007D85DC /* ModelYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelYear.swift; sourceTree = "<group>"; };
 		331DF5632567ED54007D85DC /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		331DF5662567ED71007D85DC /* BrandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandController.swift; sourceTree = "<group>"; };
-		331DF5692567EDA8007D85DC /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
+		331DF5692567EDA8007D85DC /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		3362841D25753205000C0F12 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3362842425753736000C0F12 /* CarDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarDetail.storyboard; sourceTree = "<group>"; };
+		3362842625753736000C0F12 /* CarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
 		336837D6256C00DF00FCF70C /* 20.11_MVCAdvancedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20.11_MVCAdvancedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		336837D8256C00DF00FCF70C /* _0_11_MVCAdvancedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_11_MVCAdvancedTests.swift; sourceTree = "<group>"; };
 		336837DA256C00DF00FCF70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A8A62A2567F0F200D2C0FC /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		33A8A62D2567F10F00D2C0FC /* ModelYearController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelYearController.swift; sourceTree = "<group>"; };
-		33A8A6302567F12700D2C0FC /* CarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
 		33B22CDA256BF82C00DACBBA /* 20.11_MVCAdvancedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 20.11_MVCAdvancedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B22CDC256BF82C00DACBBA /* _0_11_MVCAdvancedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_11_MVCAdvancedUITests.swift; sourceTree = "<group>"; };
 		33B22CDE256BF82C00DACBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B22CE6256BFA4400DACBBA /* BrandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTests.swift; sourceTree = "<group>"; };
+		33C38284257523790060F55A /* BrandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewModel.swift; sourceTree = "<group>"; };
+		33C38295257527150060F55A /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+		33C382A0257527A80060F55A /* ModelYearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelYearViewModel.swift; sourceTree = "<group>"; };
+		33C382AB257528050060F55A /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
 		44849CB8048A766AD0E82E56 /* Pods-20.11_MVCAdvanced-20.11_MVCAdvancedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20.11_MVCAdvanced-20.11_MVCAdvancedUITests.debug.xcconfig"; path = "Target Support Files/Pods-20.11_MVCAdvanced-20.11_MVCAdvancedUITests/Pods-20.11_MVCAdvanced-20.11_MVCAdvancedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CDD3BB7EF1AFD048AD8D230 /* Pods_20_11_MVCAdvanced_20_11_MVCAdvancedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20_11_MVCAdvanced_20_11_MVCAdvancedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFDFC409ADA819C825272FD /* Pods-20.11_MVCAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20.11_MVCAdvanced.debug.xcconfig"; path = "Target Support Files/Pods-20.11_MVCAdvanced/Pods-20.11_MVCAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,40 +152,18 @@
 		331DF53D2567EAB7007D85DC /* 20.11_MVCAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				331DF5562567EC4A007D85DC /* BaseClass.swift */,
+				331DF5692567EDA8007D85DC /* ViewModelProtocol.swift */,
+				3362841D25753205000C0F12 /* APIManager.swift */,
+				331DF5552567EB69007D85DC /* View */,
+				33C3827F2575228D0060F55A /* Scenes */,
 				331DF53E2567EAB7007D85DC /* AppDelegate.swift */,
 				331DF5402567EAB7007D85DC /* SceneDelegate.swift */,
 				331DF5472567EAB7007D85DC /* Assets.xcassets */,
-				331DF5542567EB5D007D85DC /* Model */,
-				331DF5552567EB69007D85DC /* View */,
-				331DF5532567EB4E007D85DC /* Controller */,
 				331DF5492567EAB7007D85DC /* LaunchScreen.storyboard */,
 				331DF54C2567EAB7007D85DC /* Info.plist */,
 			);
 			path = 20.11_MVCAdvanced;
-			sourceTree = "<group>";
-		};
-		331DF5532567EB4E007D85DC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				331DF5692567EDA8007D85DC /* ControllerProtocol.swift */,
-				331DF5662567ED71007D85DC /* BrandController.swift */,
-				33A8A62A2567F0F200D2C0FC /* ModelController.swift */,
-				33A8A62D2567F10F00D2C0FC /* ModelYearController.swift */,
-				33A8A6302567F12700D2C0FC /* CarController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		331DF5542567EB5D007D85DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				331DF5562567EC4A007D85DC /* BaseClass.swift */,
-				331DF55A2567ECCA007D85DC /* Brand.swift */,
-				331DF55D2567ED03007D85DC /* Model.swift */,
-				331DF5602567ED19007D85DC /* ModelYear.swift */,
-				331DF5632567ED54007D85DC /* Car.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		331DF5552567EB69007D85DC /* View */ = {
@@ -185,6 +171,15 @@
 			children = (
 				331DF5442567EAB7007D85DC /* Main.storyboard */,
 				331DF5422567EAB7007D85DC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3362843425753D1D000C0F12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3362842425753736000C0F12 /* CarDetail.storyboard */,
+				3362842625753736000C0F12 /* CarDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +201,118 @@
 				33B22CDE256BF82C00DACBBA /* Info.plist */,
 			);
 			path = 20.11_MVCAdvancedUITests;
+			sourceTree = "<group>";
+		};
+		33C3827F2575228D0060F55A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				33C38280257522CC0060F55A /* Brands */,
+				33C38292257526AB0060F55A /* Models */,
+				33C3829D257527660060F55A /* ModelYears */,
+				33C382A8257527D70060F55A /* Cars */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		33C38280257522CC0060F55A /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+				33C38281257522EA0060F55A /* Model */,
+				33C38282257522F30060F55A /* ViewModel */,
+			);
+			path = Brands;
+			sourceTree = "<group>";
+		};
+		33C38281257522EA0060F55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331DF55A2567ECCA007D85DC /* Brand.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33C38282257522F30060F55A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33C38284257523790060F55A /* BrandViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33C38292257526AB0060F55A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33C38293257526BE0060F55A /* Model */,
+				33C38294257526C50060F55A /* ViewModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33C38293257526BE0060F55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331DF55D2567ED03007D85DC /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33C38294257526C50060F55A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33C38295257527150060F55A /* ModelsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33C3829D257527660060F55A /* ModelYears */ = {
+			isa = PBXGroup;
+			children = (
+				33C3829E2575277E0060F55A /* Model */,
+				33C3829F257527840060F55A /* ViewModel */,
+			);
+			path = ModelYears;
+			sourceTree = "<group>";
+		};
+		33C3829E2575277E0060F55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331DF5602567ED19007D85DC /* ModelYear.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33C3829F257527840060F55A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33C382A0257527A80060F55A /* ModelYearViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33C382A8257527D70060F55A /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				3362843425753D1D000C0F12 /* View */,
+				33C382A9257527E00060F55A /* Model */,
+				33C382AA257527EC0060F55A /* ViewModel */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		33C382A9257527E00060F55A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331DF5632567ED54007D85DC /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33C382AA257527EC0060F55A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33C382AB257528050060F55A /* CarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F009241E2A06F78CACA2ED98 /* Frameworks */ = {
@@ -324,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3362842825753736000C0F12 /* CarDetail.storyboard in Resources */,
 				331DF54B2567EAB7007D85DC /* LaunchScreen.storyboard in Resources */,
 				331DF5482567EAB7007D85DC /* Assets.xcassets in Resources */,
 				331DF5462567EAB7007D85DC /* Main.storyboard in Resources */,
@@ -432,19 +540,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A8A62B2567F0F200D2C0FC /* ModelController.swift in Sources */,
+				3362842A25753736000C0F12 /* CarDetailViewController.swift in Sources */,
+				33C382A1257527A80060F55A /* ModelYearViewModel.swift in Sources */,
 				331DF5432567EAB7007D85DC /* ViewController.swift in Sources */,
 				331DF53F2567EAB7007D85DC /* AppDelegate.swift in Sources */,
+				33C382AC257528050060F55A /* CarViewModel.swift in Sources */,
 				331DF5642567ED54007D85DC /* Car.swift in Sources */,
-				33A8A6312567F12700D2C0FC /* CarController.swift in Sources */,
+				33C38296257527150060F55A /* ModelsViewModel.swift in Sources */,
+				3362841E25753205000C0F12 /* APIManager.swift in Sources */,
+				33C38285257523790060F55A /* BrandViewModel.swift in Sources */,
 				331DF5412567EAB7007D85DC /* SceneDelegate.swift in Sources */,
 				331DF55E2567ED03007D85DC /* Model.swift in Sources */,
-				331DF56A2567EDA8007D85DC /* ControllerProtocol.swift in Sources */,
+				331DF56A2567EDA8007D85DC /* ViewModelProtocol.swift in Sources */,
 				331DF55B2567ECCA007D85DC /* Brand.swift in Sources */,
-				33A8A62E2567F10F00D2C0FC /* ModelYearController.swift in Sources */,
 				331DF5572567EC4A007D85DC /* BaseClass.swift in Sources */,
 				331DF5612567ED19007D85DC /* ModelYear.swift in Sources */,
-				331DF5672567ED71007D85DC /* BrandController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3362844225753FB1000C0F12 /* ViewController.swift in Sources */,
 				336837D9256C00DF00FCF70C /* _0_11_MVCAdvancedTests.swift in Sources */,
 				336837E3256C00E600FCF70C /* BrandTests.swift in Sources */,
 			);
@@ -461,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3362843E25753FB1000C0F12 /* ViewController.swift in Sources */,
 				33B22CDD256BF82C00DACBBA /* _0_11_MVCAdvancedUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
